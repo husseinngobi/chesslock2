@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default dimensions for normal screens -->
+    
+    <!-- Title and Header -->
+    <dimen name="title_margin_top">16dp</dimen>
+    <dimen name="app_title_size">20sp</dimen>
+    <dimen name="chess_icon_size">24sp</dimen>
+    
+    <!-- Time Display -->
+    <dimen name="time_display_size">48sp</dimen>
+    <dimen name="date_display_size">16sp</dimen>
+    <dimen name="time_margin_top">8dp</dimen>
+    
+    <!-- Cards and Layout -->
+    <dimen name="card_margin_horizontal">16dp</dimen>
+    <dimen name="puzzle_card_margin_top">20dp</dimen>
+    <dimen name="puzzle_prompt_size">18sp</dimen>
+    
+    <!-- Chess Board -->
+    <dimen name="board_margin_horizontal">20dp</dimen>
+    <dimen name="board_margin_top">16dp</dimen>
+    
+    <!-- Controls -->
+    <dimen name="controls_padding">16dp</dimen>
+    <dimen name="button_text_size">14sp</dimen>
+    <dimen name="button_margin">12dp</dimen>
+    
+    <!-- Security Indicator -->
+    <dimen name="security_margin_bottom">16dp</dimen>
+</resources>

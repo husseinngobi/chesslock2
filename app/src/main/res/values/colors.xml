@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material Design Colors (kept for compatibility) -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- ChessLock App Theme Colors -->
+    <color name="primary">#1A1A2E</color>
+    <color name="primary_dark">#16213E</color>
+    <color name="accent">#FFD700</color>
+    
+    <!-- Chess Theme Colors -->
+    <color name="chess_gold">#FFD700</color>
+    <color name="chess_silver">#C0C0C0</color>
+    <color name="chess_brown">#8B4513</color>
+    
+    <!-- Text Colors -->
+    <color name="primary_text">#FFFFFF</color>
+    <color name="secondary_text">#B0B0B0</color>
+    <color name="tertiary_text">#808080</color>
+    
+    <!-- Background Colors -->
+    <color name="background_primary">#0F0F23</color>
+    <color name="background_secondary">#1A1A2E</color>
+    <color name="card_background">#2A2A3E</color>
+    <color name="board_background">#3A3A4E</color>
+    
+    <!-- Status and Indicators -->
+    <color name="status_overlay">#40000000</color>
+    <color name="security_text">#4CAF50</color>
+    <color name="security_bg">#1B5E20</color>
+    
+    <!-- Button Colors -->
+    <color name="hint_button_bg">#4A90E2</color>
+    <color name="hint_button_text">#FFFFFF</color>
+    <color name="undo_button_text">#FFD700</color>
+    <color name="undo_button_stroke">#FFD700</color>
+    <color name="emergency_bg">#F44336</color>
+    <color name="emergency_text">#FFFFFF</color>
+    <color name="puzzle_button_bg">#9C27B0</color>
+    
+    <!-- Difficulty Colors -->
+    <color name="difficulty_easy">#4CAF50</color>
+    <color name="difficulty_medium">#FF9800</color>
+    <color name="difficulty_hard">#F44336</color>
+    <color name="difficulty_text">#FFFFFF</color>
+    
+    <!-- Chess Board Colors -->
+    <color name="light_square">#F0D9B5</color>
+    <color name="dark_square">#B58863</color>
+    <color name="highlight_color">#FFCC02</color>
+    <color name="move_highlight">#7DD3FC</color>
+    <color name="last_move">#FBBF24</color>
+    <color name="check_color">#EF4444</color>
+    
+    <!-- System Colors -->
+    <color name="transparent">#00000000</color>
+    <color name="semi_transparent_black">#80000000</color>
+    <color name="semi_transparent_white">#80FFFFFF</color>
+    
+    <!-- Additional Material Colors for compatibility -->
+    <color name="green_500">#4CAF50</color>
+    <color name="green_700">#388E3C</color>
+    <color name="red_500">#F44336</color>
+    <color name="red_700">#D32F2F</color>
+    <color name="blue_500">#2196F3</color>
+    <color name="blue_600">#1976D2</color>
+    <color name="red_600">#E53935</color>
+    
+    <!-- Timer Colors -->
+    <color name="timer_bg">#FF1A1A2E</color>
+    <color name="timer_text">#FFFFFFFF</color>
+    
+    <!-- Gray Scale Colors for UI -->
+    <color name="gray_400">#BDBDBD</color>
+    <color name="gray_800">#424242</color>
+    <color name="gray_900">#212121</color>
+</resources>

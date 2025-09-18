@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Accurate ChessLock Preview - Shows EXACT lock screen appearance with customization controls -->
+<androidx.coordinatorlayout.widget.CoordinatorLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_900">
+    
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            <!-- Puzzle Difficulty -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="@color/gray_800">
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="🎯 Puzzle Difficulty"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="12dp" />
+                    
+                    <RadioGroup
+                        android:id="@+id/difficultyGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        
+                        <RadioButton
+                            android:id="@+id/easyDifficulty"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Easy - Simple checkmates (1-2 moves)"
+                            android:textColor="@color/white" />
+                            
+                        <RadioButton
+                            android:id="@+id/mediumDifficulty"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Medium - Standard puzzles (2-3 moves)"
+                            android:textColor="@color/white"
+                            android:checked="true" />
+                            
+                        <RadioButton
+                            android:id="@+id/hardDifficulty"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Hard - Complex tactics (3+ moves)"
+                            android:textColor="@color/white" />
+                    </RadioGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            
+            <!-- Chess Piece Style -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="@color/gray_800">
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="♚ Chess Piece Style"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="12dp" />
+                    
+                    <RadioGroup
+                        android:id="@+id/pieceStyleGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        
+                        <RadioButton
+                            android:id="@+id/traditionalPieces"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Traditional - Classic chess pieces"
+                            android:textColor="@color/white"
+                            android:checked="true" />
+                            
+                        <RadioButton
+                            android:id="@+id/minimalistPieces"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Minimalist - Simple modern pieces"
+                            android:textColor="@color/white" />
+                    </RadioGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            
+            <!-- Player Color Selection -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="@color/gray_800">
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="⚔️ Your Color (AI plays opposite)"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="12dp" />
+                    
+                    <RadioGroup
+                        android:id="@+id/playerColorGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        
+                        <RadioButton
+                            android:id="@+id/whitePlayer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="White pieces (AI plays Black)"
+                            android:textColor="@color/white"
+                            android:checked="true" />
+                            
+                        <RadioButton
+                            android:id="@+id/blackPlayer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Black pieces (AI plays White)"
+                            android:textColor="@color/white" />
+                            
+                        <RadioButton
+                            android:id="@+id/randomPlayer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Random color (AI adapts)"
+                            android:textColor="@color/white" />
+                    </RadioGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            
+            <!-- Sound Settings -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="@color/gray_800">
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="🔊 Audio Settings"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="12dp" />
+                    
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/soundEnabledSwitch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Enable chess move sounds"
+                        android:textColor="@color/white"
+                        android:checked="true" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            
+            <!-- Apply Changes Button -->
+            <Button
+                android:id="@+id/applyChangesButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Apply Changes to Lock Screen"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                style="@style/Widget.Material3.Button"
+                android:layout_marginTop="8dp" />
+                
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

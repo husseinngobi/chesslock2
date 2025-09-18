@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/green_700"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Header -->
+        <TextView
+            android:text="@string/chesslock_stats"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Stat Cards -->
+        <TextView android:id="@+id/gamesPlayedText"
+            android:text="@string/games_played_format"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView android:id="@+id/winRateText"
+            android:text="@string/win_rate_format"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView android:id="@+id/streakText"
+            android:text="@string/current_streak_format"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView android:id="@+id/totalUnlocksText"
+            android:text="@string/total_unlocks_format"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView android:id="@+id/avgTimeText"
+            android:text="@string/average_time_format"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView android:id="@+id/bestTimeText"
+            android:text="@string/best_time_format"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Reset Button -->
+        <Button
+            android:id="@+id/resetStatsButton"
+            android:text="@string/reset_stats"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/red_500"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

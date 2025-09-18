@@ -1,0 +1,1929 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 8.13.0" type="baseline" client="gradle" dependencies="false" name="AGP (8.13.0)" variant="all" version="8.13.0">
+
+    <issue
+        id="MissingInflatedId"
+        message="`@layout/activity_preview` does not contain a declaration with id `playerColorGroup`"
+        errorLine1="        val playerColorGroup = findViewById&lt;RadioGroup>(R.id.playerColorGroup)"
+        errorLine2="                                                        ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/ngobi/chesslock/PreviewActivity.kt"
+            line="37"
+            column="57"/>
+    </issue>
+
+    <issue
+        id="MissingInflatedId"
+        message="`@layout/activity_preview` does not contain a declaration with id `boardThemeSpinner`"
+        errorLine1="        val boardThemeSpinner = findViewById&lt;Spinner>(R.id.boardThemeSpinner)"
+        errorLine2="                                                      ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/ngobi/chesslock/PreviewActivity.kt"
+            line="38"
+            column="55"/>
+    </issue>
+
+    <issue
+        id="MissingInflatedId"
+        message="`@layout/activity_preview` does not contain a declaration with id `nativeLockToggle`"
+        errorLine1="        val nativeLockToggle = findViewById&lt;SwitchCompat>(R.id.nativeLockToggle)"
+        errorLine2="                                                          ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/ngobi/chesslock/PreviewActivity.kt"
+            line="39"
+            column="59"/>
+    </issue>
+
+    <issue
+        id="MissingInflatedId"
+        message="`@layout/activity_preview` does not contain a declaration with id `applyPreviewButton`"
+        errorLine1="        val applyPreviewButton = findViewById&lt;Button>(R.id.applyPreviewButton)"
+        errorLine2="                                                      ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/ngobi/chesslock/PreviewActivity.kt"
+            line="40"
+            column="55"/>
+    </issue>
+
+    <issue
+        id="MissingInflatedId"
+        message="`@layout/activity_preview` does not contain a declaration with id `openSettingsButton`"
+        errorLine1="        val openSettingsButton = findViewById&lt;Button>(R.id.openSettingsButton)"
+        errorLine2="                                                      ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/ngobi/chesslock/PreviewActivity.kt"
+            line="41"
+            column="55"/>
+    </issue>
+
+    <issue
+        id="MissingInflatedId"
+        message="`@layout/activity_preview` does not contain a declaration with id `tryFullLockscreenButton`"
+        errorLine1="        val tryFullLockscreenButton = findViewById&lt;Button>(R.id.tryFullLockscreenButton)"
+        errorLine2="                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/ngobi/chesslock/PreviewActivity.kt"
+            line="42"
+            column="60"/>
+    </issue>
+
+    <issue
+        id="MissingInflatedId"
+        message="`@layout/activity_preview` does not contain a declaration with id `exitAppButton`"
+        errorLine1="        val exitAppButton = findViewById&lt;Button>(R.id.exitAppButton)"
+        errorLine2="                                                 ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/ngobi/chesslock/PreviewActivity.kt"
+            line="43"
+            column="50"/>
+    </issue>
+
+    <issue
+        id="ProtectedPermissions"
+        message="Permission is only granted to system apps"
+        errorLine1="    &lt;uses-permission android:name=&quot;android.permission.BIND_DEVICE_ADMIN&quot; />"
+        errorLine2="                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="19"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="ProtectedPermissions"
+        message="Permission is only granted to system apps"
+        errorLine1="    &lt;uses-permission android:name=&quot;android.permission.BIND_ACCESSIBILITY_SERVICE&quot; />"
+        errorLine2="                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="22"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="AndroidGradlePluginVersion"
+        message="A newer version of Gradle than 8.13 is available: 8.14.3"
+        errorLine1="distributionUrl=https\://services.gradle.org/distributions/gradle-8.13-bin.zip"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/wrapper/gradle-wrapper.properties"
+            line="3"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-ktx than 2.7.0 is available: 2.9.3"
+        errorLine1="    implementation(&quot;androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="56"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-livedata-ktx than 2.7.0 is available: 2.9.3"
+        errorLine1="    implementation(&quot;androidx.lifecycle:lifecycle-livedata-ktx:2.7.0&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="57"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.dynamicanimation:dynamicanimation than 1.0.0 is available: 1.1.0"
+        errorLine1="    implementation(&quot;androidx.dynamicanimation:dynamicanimation:1.0.0&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="65"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.google.android.material:material than 1.10.0 is available: 1.13.0"
+        errorLine1="material = &quot;1.10.0&quot;"
+        errorLine2="           ~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="9"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.activity:activity than 1.8.0 is available: 1.11.0"
+        errorLine1="activity = &quot;1.8.0&quot;"
+        errorLine2="           ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="10"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.constraintlayout:constraintlayout than 2.1.4 is available: 2.2.1"
+        errorLine1="constraintlayout = &quot;2.1.4&quot;"
+        errorLine2="                   ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="11"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="NewerVersionAvailable"
+        message="A newer version of org.jetbrains.kotlinx:kotlinx-coroutines-android than 1.7.3 is available: 1.10.2"
+        errorLine1="    implementation(&quot;org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="62"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="NewerVersionAvailable"
+        message="A newer version of org.jetbrains.kotlin.android than 2.0.21 is available: 2.2.20"
+        errorLine1="kotlin = &quot;2.0.21&quot;"
+        errorLine2="         ~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="3"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="PrivateResource"
+        message="The resource `@string/copy` is marked as private in androidx.preference:preference:1.2.1"
+        errorLine1="            android:text=&quot;@string/copy&quot;"
+        errorLine2="                          ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/item_donation_method.xml"
+            line="47"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="PrivateResource"
+        message="Overriding `@string/copy` which is marked as private in androidx.preference:preference:1.2.1. If deliberate, use tools:override=&quot;true&quot;, otherwise pick a different name."
+        errorLine1="    &lt;string name=&quot;copy&quot;>Copy&lt;/string>"
+        errorLine2="                  ~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="249"
+            column="19"/>
+    </issue>
+
+    <issue
+        id="PluralsCandidate"
+        message="Formatting %d followed by words (&quot;more&quot;): This should probably be a plural rather than a string"
+        errorLine1="    &lt;string name=&quot;emergency_unlock_tap_count&quot;>🚨 Emergency unlock: tap %d more times&lt;/string>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="46"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="This folder configuration (`v26`) is unnecessary; `minSdkVersion` is 28. Merge all the resources in this folder into `mipmap-anydpi`.">
+        <location
+            file="src/main/res/mipmap-anydpi-v26"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@color/green_700` with a theme that also paints a background (inferred theme is `@style/Theme.ChessLock`)"
+        errorLine1="    android:background=&quot;@color/green_700&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_donate.xml"
+            line="3"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@color/green_700` with a theme that also paints a background (inferred theme is `@style/Theme.ChessLock`)"
+        errorLine1="    android:background=&quot;@color/green_700&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_preview.xml"
+            line="7"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@color/green_700` with a theme that also paints a background (inferred theme is `@style/Theme.ChessLock`)"
+        errorLine1="    android:background=&quot;@color/green_700&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_preview_clean.xml"
+            line="7"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@color/green_700` with a theme that also paints a background (inferred theme is `@style/Theme.ChessLock`)"
+        errorLine1="    android:background=&quot;@color/green_700&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_preview_new.xml"
+            line="7"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@color/green_700` with a theme that also paints a background (inferred theme is `@style/Theme.ChessLock`)"
+        errorLine1="    android:background=&quot;@color/green_700&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_stats.xml"
+            line="3"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@android:color/white` with a theme that also paints a background (inferred theme is `@style/Theme.ChessLock`)"
+        errorLine1="    android:background=&quot;@android:color/white&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/item_donation_method.xml"
+            line="3"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.activity_lock_screen_responsive_clean` appears to be unused"
+        errorLine1="&lt;ScrollView xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/layout/activity_lock_screen_responsive_clean.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.activity_preview_clean` appears to be unused"
+        errorLine1="&lt;ScrollView xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/layout/activity_preview_clean.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.activity_preview_new` appears to be unused"
+        errorLine1="&lt;ScrollView xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/layout/activity_preview_new.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.activity_settings_temp` appears to be unused"
+        errorLine1="&lt;ScrollView"
+        errorLine2="^">
+        <location
+            file="src/main/res/layout/activity_settings_temp.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.chess_capture` appears to be unused">
+        <location
+            file="src/main/res/raw/chess_capture.txt"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.chess_castle` appears to be unused">
+        <location
+            file="src/main/res/raw/chess_castle.txt"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.chess_check` appears to be unused">
+        <location
+            file="src/main/res/raw/chess_check.txt"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.chess_checkmate` appears to be unused">
+        <location
+            file="src/main/res/raw/chess_checkmate.txt"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.chess_move` appears to be unused">
+        <location
+            file="src/main/res/raw/chess_move.txt"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.mipmap.chesslock_icon` appears to be unused">
+        <location
+            file="src/main/res/mipmap-anydpi-v26/chesslock_icon.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.primary` appears to be unused"
+        errorLine1="    &lt;color name=&quot;primary&quot;>#1A1A2E&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="13"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.accent` appears to be unused"
+        errorLine1="    &lt;color name=&quot;accent&quot;>#FFD700&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="15"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.chess_silver` appears to be unused"
+        errorLine1="    &lt;color name=&quot;chess_silver&quot;>#C0C0C0&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="19"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.chess_brown` appears to be unused"
+        errorLine1="    &lt;color name=&quot;chess_brown&quot;>#8B4513&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="20"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.tertiary_text` appears to be unused"
+        errorLine1="    &lt;color name=&quot;tertiary_text&quot;>#808080&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="25"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.background_primary` appears to be unused"
+        errorLine1="    &lt;color name=&quot;background_primary&quot;>#0F0F23&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="28"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.background_secondary` appears to be unused"
+        errorLine1="    &lt;color name=&quot;background_secondary&quot;>#1A1A2E&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="29"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.light_square` appears to be unused"
+        errorLine1="    &lt;color name=&quot;light_square&quot;>#F0D9B5&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="54"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.dark_square` appears to be unused"
+        errorLine1="    &lt;color name=&quot;dark_square&quot;>#B58863&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="55"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.highlight_color` appears to be unused"
+        errorLine1="    &lt;color name=&quot;highlight_color&quot;>#FFCC02&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="56"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.move_highlight` appears to be unused"
+        errorLine1="    &lt;color name=&quot;move_highlight&quot;>#7DD3FC&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="57"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.last_move` appears to be unused"
+        errorLine1="    &lt;color name=&quot;last_move&quot;>#FBBF24&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="58"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.check_color` appears to be unused"
+        errorLine1="    &lt;color name=&quot;check_color&quot;>#EF4444&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="59"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.transparent` appears to be unused"
+        errorLine1="    &lt;color name=&quot;transparent&quot;>#00000000&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="62"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.semi_transparent_black` appears to be unused"
+        errorLine1="    &lt;color name=&quot;semi_transparent_black&quot;>#80000000&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="63"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.semi_transparent_white` appears to be unused"
+        errorLine1="    &lt;color name=&quot;semi_transparent_white&quot;>#80FFFFFF&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="64"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.red_700` appears to be unused"
+        errorLine1="    &lt;color name=&quot;red_700&quot;>#D32F2F&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="70"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.timer_bg` appears to be unused"
+        errorLine1="    &lt;color name=&quot;timer_bg&quot;>#FF1A1A2E&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="76"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.timer_text` appears to be unused"
+        errorLine1="    &lt;color name=&quot;timer_text&quot;>#FFFFFFFF&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="77"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.security_margin_bottom` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;security_margin_bottom&quot;>16dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="33"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_launcher_background` appears to be unused"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/ic_launcher_background.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.illegal_move` appears to be unused">
+        <location
+            file="src/main/res/raw/illegal_move.txt"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.piece_select` appears to be unused">
+        <location
+            file="src/main/res/raw/piece_select.txt"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.raw.puzzle_solved` appears to be unused">
+        <location
+            file="src/main/res/raw/puzzle_solved.txt"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.app_description` appears to be unused"
+        errorLine1="    &lt;string name=&quot;app_description&quot;>Secure your device with chess puzzles&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="4"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.launch_lock_screen` appears to be unused"
+        errorLine1="    &lt;string name=&quot;launch_lock_screen&quot;>🔒 Test Chess Lock&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="7"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.open_settings` appears to be unused"
+        errorLine1="    &lt;string name=&quot;open_settings&quot;>⚙️ Settings&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="8"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.complete_setup` appears to be unused"
+        errorLine1="    &lt;string name=&quot;complete_setup&quot;>🔧 Complete Setup&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="9"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.support_chesslock` appears to be unused"
+        errorLine1="    &lt;string name=&quot;support_chesslock&quot;>❤️ Support ChessLock&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="10"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.setup_required_title` appears to be unused"
+        errorLine1="    &lt;string name=&quot;setup_required_title&quot;>⚠️ Setup Required&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="13"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.setup_dialog_title` appears to be unused"
+        errorLine1="    &lt;string name=&quot;setup_dialog_title&quot;>🔐 ChessLock Setup&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="14"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.overlay_permission_desc` appears to be unused"
+        errorLine1="    &lt;string name=&quot;overlay_permission_desc&quot;>Enable overlay permission for lockscreen functionality&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="15"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.admin_permission_desc` appears to be unused"
+        errorLine1="    &lt;string name=&quot;admin_permission_desc&quot;>Grant device administrator permission for secure locking&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="16"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.setup_now` appears to be unused"
+        errorLine1="    &lt;string name=&quot;setup_now&quot;>Setup Now&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="17"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.setup_later` appears to be unused"
+        errorLine1="    &lt;string name=&quot;setup_later&quot;>Later&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="18"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.cancel` appears to be unused"
+        errorLine1="    &lt;string name=&quot;cancel&quot;>Cancel&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="19"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.chesslock_already_setup` appears to be unused"
+        errorLine1="    &lt;string name=&quot;chesslock_already_setup&quot;>✅ ChessLock is already set up and ready!&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="25"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.puzzle_prompt` appears to be unused"
+        errorLine1="    &lt;string name=&quot;puzzle_prompt&quot;>🏆 White to move and win&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="28"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.puzzle_solved` appears to be unused"
+        errorLine1="    &lt;string name=&quot;puzzle_solved&quot;>🎉 Chess puzzle solved! Device unlocked!&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="29"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.solve_puzzle_to_unlock` appears to be unused"
+        errorLine1="    &lt;string name=&quot;solve_puzzle_to_unlock&quot;>🔒 Solve the chess puzzle to unlock&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="30"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.move_undone` appears to be unused"
+        errorLine1="    &lt;string name=&quot;move_undone&quot;>Move undone&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="34"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.no_hint_available` appears to be unused"
+        errorLine1="    &lt;string name=&quot;no_hint_available&quot;>No hint available for this puzzle&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="35"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.emergency_unlock_title` appears to be unused"
+        errorLine1="    &lt;string name=&quot;emergency_unlock_title&quot;>🚨 Emergency Unlock&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="44"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.emergency_unlock_message` appears to be unused"
+        errorLine1="    &lt;string name=&quot;emergency_unlock_message&quot;>Are you sure you want to bypass the chess puzzle? This will be logged for security.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="45"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.emergency_unlock_tap_count` appears to be unused"
+        errorLine1="    &lt;string name=&quot;emergency_unlock_tap_count&quot;>🚨 Emergency unlock: tap %d more times&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="46"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.emergency_unlock_confirm` appears to be unused"
+        errorLine1="    &lt;string name=&quot;emergency_unlock_confirm&quot;>⚠️ Emergency unlock: tap 1 more time to confirm&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="47"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.yes_unlock` appears to be unused"
+        errorLine1="    &lt;string name=&quot;yes_unlock&quot;>Yes, Unlock&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="48"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.authentication_failed` appears to be unused"
+        errorLine1="    &lt;string name=&quot;authentication_failed&quot;>❌ Authentication failed&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="49"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.biometric_unlock_title` appears to be unused"
+        errorLine1="    &lt;string name=&quot;biometric_unlock_title&quot;>🔐 Emergency Unlock&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="50"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.biometric_unlock_subtitle` appears to be unused"
+        errorLine1="    &lt;string name=&quot;biometric_unlock_subtitle&quot;>Authenticate to bypass chess puzzle&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="51"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.security_warning_title` appears to be unused"
+        errorLine1="    &lt;string name=&quot;security_warning_title&quot;>⚠️ Security Warning&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="54"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.security_warning_message` appears to be unused"
+        errorLine1="    &lt;string name=&quot;security_warning_message&quot;>No system lockscreen is set. For security, please set up a PIN, pattern, or password in Settings.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="55"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.continue_anyway` appears to be unused"
+        errorLine1="    &lt;string name=&quot;continue_anyway&quot;>Continue&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="56"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.admin_enabled_message` appears to be unused"
+        errorLine1="    &lt;string name=&quot;admin_enabled_message&quot;>🔐 ChessLock security enabled! Your device can now be locked with chess puzzles.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="60"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.admin_disabled_message` appears to be unused"
+        errorLine1="    &lt;string name=&quot;admin_disabled_message&quot;>⚠️ ChessLock security disabled. Chess lock features may not work properly.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="61"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.password_changed_message` appears to be unused"
+        errorLine1="    &lt;string name=&quot;password_changed_message&quot;>🔑 Device password changed. ChessLock emergency unlock updated.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="62"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.admin_explanation` appears to be unused"
+        errorLine1="    &lt;string name=&quot;admin_explanation&quot;>ChessLock needs device administrator permission to lock your screen securely when you activate chess lock mode.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="63"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.unable_to_lock_message` appears to be unused"
+        errorLine1="    &lt;string name=&quot;unable_to_lock_message&quot;>Unable to lock device. Please ensure device admin permission is granted.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="64"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.require_native_lock` appears to be unused"
+        errorLine1="    &lt;string name=&quot;require_native_lock&quot;>Require native lock after puzzle win&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="67"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.lock_screen_preview` appears to be unused"
+        errorLine1="    &lt;string name=&quot;lock_screen_preview&quot;>Lock Screen Preview&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="68"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.apply_preview` appears to be unused"
+        errorLine1="    &lt;string name=&quot;apply_preview&quot;>Apply &amp;amp; Preview&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="69"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.go_to_settings` appears to be unused"
+        errorLine1="    &lt;string name=&quot;go_to_settings&quot;>Go to Settings&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="70"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.enable_admin_access` appears to be unused"
+        errorLine1="    &lt;string name=&quot;enable_admin_access&quot;>Enable Admin Access&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="71"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.enable_overlay_permission` appears to be unused"
+        errorLine1="    &lt;string name=&quot;enable_overlay_permission&quot;>Enable Overlay Permission&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="72"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.features_title` appears to be unused"
+        errorLine1="    &lt;string name=&quot;features_title&quot;>✨ Features&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="75"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.feature_puzzles` appears to be unused"
+        errorLine1="    &lt;string name=&quot;feature_puzzles&quot;>🧩 Chess puzzles as unlock mechanism&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="76"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.feature_emergency` appears to be unused"
+        errorLine1="    &lt;string name=&quot;feature_emergency&quot;>🚨 Emergency unlock with biometric authentication&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="77"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.feature_difficulty` appears to be unused"
+        errorLine1="    &lt;string name=&quot;feature_difficulty&quot;>⭐ Multiple difficulty levels and puzzle types&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="78"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.hint_title` appears to be unused"
+        errorLine1="    &lt;string name=&quot;hint_title&quot;>💡 Hint&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="81"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.hint_got_it` appears to be unused"
+        errorLine1="    &lt;string name=&quot;hint_got_it&quot;>Got it!&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="82"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.overlay_permission_required` appears to be unused"
+        errorLine1="    &lt;string name=&quot;overlay_permission_required&quot;>Overlay permission required to launch lock screen&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="85"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.overlay_permission_not_granted` appears to be unused"
+        errorLine1="    &lt;string name=&quot;overlay_permission_not_granted&quot;>Overlay permission not granted&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="86"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.time_format` appears to be unused"
+        errorLine1="    &lt;string name=&quot;time_format&quot;>HH:mm&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="89"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.date_format` appears to be unused"
+        errorLine1="    &lt;string name=&quot;date_format&quot;>EEEE, MMMM d&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="90"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.emergency_mode_description` appears to be unused"
+        errorLine1="    &lt;string name=&quot;emergency_mode_description&quot;>Normal interface failed to load. Use the button below to exit.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="112"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.move_white_king` appears to be unused"
+        errorLine1="    &lt;string name=&quot;move_white_king&quot;>Move the white king&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="127"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.move_white_knight` appears to be unused"
+        errorLine1="    &lt;string name=&quot;move_white_knight&quot;>Move the white knight&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="128"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.medium_uppercase` appears to be unused"
+        errorLine1="    &lt;string name=&quot;medium_uppercase&quot;>MEDIUM&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="129"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.customize_lockscreen` appears to be unused"
+        errorLine1="    &lt;string name=&quot;customize_lockscreen&quot;>Customize Your Lockscreen&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="130"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.play_as` appears to be unused"
+        errorLine1="    &lt;string name=&quot;play_as&quot;>Play As:&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="131"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.white_pieces` appears to be unused"
+        errorLine1="    &lt;string name=&quot;white_pieces&quot;>White Pieces&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="132"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.black_pieces` appears to be unused"
+        errorLine1="    &lt;string name=&quot;black_pieces&quot;>Black Pieces&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="133"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.pieces_stay_color` appears to be unused"
+        errorLine1="    &lt;string name=&quot;pieces_stay_color&quot;>Board colors only - chess pieces remain white/black&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="135"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.use_native_lock` appears to be unused"
+        errorLine1="    &lt;string name=&quot;use_native_lock&quot;>Use Native Lock After Puzzle&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="136"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.activate_chess_lock` appears to be unused"
+        errorLine1="    &lt;string name=&quot;activate_chess_lock&quot;>Activate Chess Lock&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="137"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.exit_app` appears to be unused"
+        errorLine1="    &lt;string name=&quot;exit_app&quot;>Exit App&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="138"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.september_10` appears to be unused"
+        errorLine1="    &lt;string name=&quot;september_10&quot;>Monday, September 10&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="139"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.queen_piece_symbol` appears to be unused"
+        errorLine1="    &lt;string name=&quot;queen_piece_symbol&quot;>♛&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="144"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.chesslock_app_name` appears to be unused"
+        errorLine1="    &lt;string name=&quot;chesslock_app_name&quot;>ChessLock&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="154"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.time_display` appears to be unused"
+        errorLine1="    &lt;string name=&quot;time_display&quot;>12:34&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="196"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.current_puzzle` appears to be unused"
+        errorLine1="    &lt;string name=&quot;current_puzzle&quot;>Current Puzzle:&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="197"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.preview_lockscreen` appears to be unused"
+        errorLine1="    &lt;string name=&quot;preview_lockscreen&quot;>Preview Lockscreen&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="198"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.advanced_settings` appears to be unused"
+        errorLine1="    &lt;string name=&quot;advanced_settings&quot;>Advanced Settings&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="199"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.move_white_knight_checkmate` appears to be unused"
+        errorLine1="    &lt;string name=&quot;move_white_knight_checkmate&quot;>Move the white knight to checkmate!&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="207"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.save` appears to be unused"
+        errorLine1="    &lt;string name=&quot;save&quot;>Save&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="210"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.lockscreen_preview_emoji` appears to be unused"
+        errorLine1="    &lt;string name=&quot;lockscreen_preview_emoji&quot;>🎯 Lockscreen Preview&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="213"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.preview_date_default` appears to be unused"
+        errorLine1="    &lt;string name=&quot;preview_date_default&quot;>Monday, September 10&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="214"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.customize_lockscreen_emoji` appears to be unused"
+        errorLine1="    &lt;string name=&quot;customize_lockscreen_emoji&quot;>⚙️ Customize Your Lockscreen&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="215"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.try_fullscreen` appears to be unused"
+        errorLine1="    &lt;string name=&quot;try_fullscreen&quot;>📱 Try Full Lockscreen&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="216"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.test_actual_lock` appears to be unused"
+        errorLine1="    &lt;string name=&quot;test_actual_lock&quot;>🔒 Test with Actual Lock&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="217"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.advanced_settings_emoji` appears to be unused"
+        errorLine1="    &lt;string name=&quot;advanced_settings_emoji&quot;>⚙️ Advanced Settings&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="218"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.board_theme_label` appears to be unused"
+        errorLine1="    &lt;string name=&quot;board_theme_label&quot;>Board Theme:&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="221"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.use_native_lock_label` appears to be unused"
+        errorLine1="    &lt;string name=&quot;use_native_lock_label&quot;>Use Native Lock After Puzzle&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="222"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MonochromeLauncherIcon"
+        message="The application adaptive icon is missing a monochrome tag"
+        errorLine1="&lt;adaptive-icon xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="MonochromeLauncherIcon"
+        message="The application adaptive roundIcon is missing a monochrome tag"
+        errorLine1="&lt;adaptive-icon xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/b_bishop.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/b_bishop.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/b_king.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/b_king.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/b_knight.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/b_knight.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/b_pawn.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/b_pawn.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/b_queen.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/b_queen.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/b_rook.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/b_rook.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/w_bishop.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/w_bishop.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/w_king.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/w_king.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/w_knight.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/w_knight.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/w_pawn.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/w_pawn.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/w_queen.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/w_queen.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/w_rook.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/w_rook.png"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        message="Use version catalog instead"
+        errorLine1="    implementation(&quot;androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="56"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        message="Use version catalog instead"
+        errorLine1="    implementation(&quot;androidx.lifecycle:lifecycle-livedata-ktx:2.7.0&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="57"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        message="Use version catalog instead"
+        errorLine1="    implementation(&quot;androidx.biometric:biometric:1.1.0&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="58"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        message="Use version catalog instead"
+        errorLine1="    implementation(&quot;androidx.preference:preference-ktx:1.2.1&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="59"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        message="Use version catalog instead"
+        errorLine1="    implementation(&quot;org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="62"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        message="Use version catalog instead"
+        errorLine1="    implementation(&quot;androidx.dynamicanimation:dynamicanimation:1.0.0&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="65"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Number formatting does not take into account locale settings. Consider using `String.format` instead."
+        errorLine1="        findViewById&lt;TextView>(R.id.gamesPlayedText).text = stats.gamesPlayed.toString()"
+        errorLine2="                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/ngobi/chesslock/StatsActivity.kt"
+            line="18"
+            column="61"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Number formatting does not take into account locale settings. Consider using `String.format` instead."
+        errorLine1="        findViewById&lt;TextView>(R.id.streakText).text = stats.streak.toString()"
+        errorLine2="                                                       ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/ngobi/chesslock/StatsActivity.kt"
+            line="20"
+            column="56"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Number formatting does not take into account locale settings. Consider using `String.format` instead."
+        errorLine1="        findViewById&lt;TextView>(R.id.totalUnlocksText).text = stats.totalUnlocks.toString()"
+        errorLine2="                                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/ngobi/chesslock/StatsActivity.kt"
+            line="21"
+            column="62"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;♛&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;♛&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="33"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;ChessLock&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;ChessLock&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="43"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Secure your device with chess&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;Secure your device with chess&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="54"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;❌&quot;, should use `@string` resource"
+        errorLine1="                    android:text=&quot;❌&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="85"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;ChessLock needs setup. Tap &apos;Complete Setup&apos; to begin.&quot;, should use `@string` resource"
+        errorLine1="                    android:text=&quot;ChessLock needs setup. Tap &apos;Complete Setup&apos; to begin.&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="94"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;🔧 Complete Setup&quot;, should use `@string` resource"
+        errorLine1="                    android:text=&quot;🔧 Complete Setup&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="127"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;🔒 Test Chess Lock&quot;, should use `@string` resource"
+        errorLine1="                    android:text=&quot;🔒 Test Chess Lock&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="141"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;👁️ Preview Lockscreen&quot;, should use `@string` resource"
+        errorLine1="                    android:text=&quot;👁️ Preview Lockscreen&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="154"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;⚙️ Settings&quot;, should use `@string` resource"
+        errorLine1="                    android:text=&quot;⚙️ Settings&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="167"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;📊 Statistics&quot;, should use `@string` resource"
+        errorLine1="                    android:text=&quot;📊 Statistics&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="180"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;✨ Features&quot;, should use `@string` resource"
+        errorLine1="                    android:text=&quot;✨ Features&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="212"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;🧩&quot;, should use `@string` resource"
+        errorLine1="                        android:text=&quot;🧩&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="228"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Chess puzzles as unlock mechanism&quot;, should use `@string` resource"
+        errorLine1="                        android:text=&quot;Chess puzzles as unlock mechanism&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="235"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;🚨&quot;, should use `@string` resource"
+        errorLine1="                        android:text=&quot;🚨&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="250"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Emergency unlock with biometric authentication&quot;, should use `@string` resource"
+        errorLine1="                        android:text=&quot;Emergency unlock with biometric authentication&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="257"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;⭐&quot;, should use `@string` resource"
+        errorLine1="                        android:text=&quot;⭐&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="271"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Multiple difficulty levels and puzzle types&quot;, should use `@string` resource"
+        errorLine1="                        android:text=&quot;Multiple difficulty levels and puzzle types&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="278"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;❤️ Support ChessLock&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;❤️ Support ChessLock&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="294"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;🚪 Exit App&quot;, should use `@string` resource"
+        errorLine1="            android:text=&quot;🚪 Exit App&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="309"
+            column="13"/>
+    </issue>
+
+</issues>

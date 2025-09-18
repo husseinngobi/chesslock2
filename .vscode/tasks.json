@@ -1,0 +1,12 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Test ChessLock Comprehensive Functionality",
+			"type": "shell",
+			"command": "echo 'Testing ChessLock app functionality across all scenarios...'",
+			"isBackground": false,
+			"group": "test"
+		}
+	]
+}

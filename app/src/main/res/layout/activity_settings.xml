@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".SettingsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="32dp">
+
+        <!-- Difficulty Label -->
+        <TextView
+            android:id="@+id/difficultyLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_difficulty"
+            android:textSize="18sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="16dp" />
+
+        <!-- Difficulty Selector -->
+        <RadioGroup
+            android:id="@+id/difficultyGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/difficultyLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp">
+
+            <RadioButton
+                android:id="@+id/easy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/easy" />
+
+            <RadioButton
+                android:id="@+id/medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/medium" />
+
+            <RadioButton
+                android:id="@+id/hard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hard" />
+        </RadioGroup>
+
+        <!-- Player Color Label -->
+        <TextView
+            android:id="@+id/colorLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/player_color"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/difficultyGroup"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="16dp" />
+
+        <!-- Player Color Selector -->
+        <RadioGroup
+            android:id="@+id/colorGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/colorLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp">
+
+            <RadioButton
+                android:id="@+id/whiteColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/white" />
+
+            <RadioButton
+                android:id="@+id/blackColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/black" />
+
+            <RadioButton
+                android:id="@+id/randomColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/random" />
+        </RadioGroup>
+
+        <!-- Board Theme Label -->
+        <TextView
+            android:id="@+id/themeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/board_theme"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/colorGroup"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="16dp" />
+
+        <!-- Board Theme Spinner -->
+        <Spinner
+            android:id="@+id/themeSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/themeLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="16dp" />
+
+        <!-- Native Lock Setting -->
+        <TextView
+            android:id="@+id/nativeLockLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔐 Security Mode"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/themeSpinner"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="16dp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/nativeLockSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Require native lock after chess"
+            app:layout_constraintTop_toBottomOf="@id/nativeLockLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp" />
+
+        <!-- Enable Device Admin Button -->
+        <Button
+            android:id="@+id/enableAdminButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/enable_device_admin"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nativeLockSwitch"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="16dp" />
+
+        <!-- Enable Overlay Permission Button -->
+        <Button
+            android:id="@+id/enableOverlayButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/enable_overlay_permission_emoji"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/enableAdminButton"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="16dp" />
+
+        <!-- Activate ChessLock Button -->
+        <Button
+            android:id="@+id/activateButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/activate_chesslock_emoji"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/enableOverlayButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="16dp" />
+
+        <!-- Preview Button -->
+        <Button
+            android:id="@+id/previewButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/preview_emoji"
+            app:layout_constraintTop_toBottomOf="@id/activateButton"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp" />
+
+        <!-- Reset Settings Button -->
+        <Button
+            android:id="@+id/resetSettingsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset_settings"
+            app:layout_constraintTop_toBottomOf="@id/previewButton"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp" />
+
+        <!-- View Stats Button -->
+        <Button
+            android:id="@+id/openStatsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/statistics_emoji"
+            app:layout_constraintTop_toBottomOf="@id/resetSettingsButton"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp" />
+
+        <!-- Support ChessLock Button -->
+        <Button
+            android:id="@+id/openDonateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/support_chesslock_emoji"
+            app:layout_constraintTop_toBottomOf="@id/openStatsButton"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp" />
+
+        <!-- Exit App Button -->
+        <Button
+            android:id="@+id/exitAppButton"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exit_app_emoji"
+            android:textSize="12sp"
+            android:alpha="0.7"
+            app:layout_constraintTop_toBottomOf="@id/openDonateButton"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="16dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

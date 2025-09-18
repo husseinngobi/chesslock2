@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/lockscreen_gradient_bg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LockScreenActivity">
+
+        <!-- Status Bar Overlay -->
+        <View
+            android:id="@+id/statusBarOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/status_overlay"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHeight_min="24dp"/>
+
+        <!-- App Title with Chess Icon and Timer Container -->
+        <LinearLayout
+            android:id="@+id/titleLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@id/statusBarOverlay"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/title_margin_top">
+
+            <!-- Professional Chess Timer - Top Position -->
+            <com.ngobi.chesslock.ChessTimerView
+                android:id="@+id/chess_timer"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="12dp"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="♛"
+                android:textSize="@dimen/chess_icon_size"
+                android:textColor="@color/chess_gold"
+                android:layout_marginEnd="8dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ChessLock"
+                    android:textSize="@dimen/app_title_size"
+                    android:textColor="@color/primary_text"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"/>
+
+                <!-- Compact Timer Display -->
+                <TextView
+                    android:id="@+id/puzzleTimer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/chess_gold"
+                    android:fontFamily="monospace"
+                    android:background="@drawable/difficulty_badge_bg"
+                    android:paddingHorizontal="6dp"
+                    android:paddingVertical="2dp"
+                    android:layout_marginTop="2dp"
+                    android:text="⏱️ 00:00"
+                    android:visibility="visible"/>
+                    
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="♛"
+                android:textSize="@dimen/chess_icon_size"
+                android:textColor="@color/chess_gold"
+                android:layout_marginStart="8dp"/>
+
+        </LinearLayout>
+
+        <!-- Time Display -->
+        <TextView
+            android:id="@+id/timeDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/time_display_size"
+            android:textColor="@color/primary_text"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:shadowColor="#40000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"
+            app:layout_constraintTop_toBottomOf="@id/titleLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/time_margin_top"
+            tools:text="14:32"/>
+
+        <!-- Date Display -->
+        <TextView
+            android:id="@+id/dateDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/date_display_size"
+            android:textColor="@color/secondary_text"
+            android:fontFamily="sans-serif-light"
+            app:layout_constraintTop_toBottomOf="@id/timeDisplay"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="4dp"
+            tools:text="Tuesday, September 10"/>
+
+        <!-- Puzzle Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/puzzleCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@color/card_background"
+            android:layout_marginHorizontal="@dimen/card_margin_horizontal"
+            app:layout_constraintTop_toBottomOf="@id/dateDisplay"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/puzzle_card_margin_top">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Puzzle Prompt -->
+                <TextView
+                    android:id="@+id/puzzlePrompt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🏆 Checkmate in 1 move"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/puzzle_prompt_size"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:fontFamily="serif"
+                    android:layout_marginBottom="8dp"/>
+
+                <!-- Difficulty Badge -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/difficulty_badge_bg"
+                    android:padding="6dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/difficultyLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EASY"
+                        android:textColor="@color/difficulty_text"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Chess Board Container with Proper Sizing -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/boardCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="12dp"
+            app:cardBackgroundColor="@color/board_background"
+            android:layout_marginHorizontal="@dimen/board_margin_horizontal"
+            app:layout_constraintTop_toBottomOf="@id/puzzleCard"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/controlsLayout"
+            app:layout_constraintWidth_max="360dp"
+            app:layout_constraintHeight_max="360dp"
+            app:layout_constraintDimensionRatio="1:1"
+            android:layout_marginTop="@dimen/board_margin_top">
+
+            <!-- Chess Board View with Proper Sizing -->
+            <com.ngobi.chesslock.ChessBoardView
+                android:id="@+id/chessBoard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:minWidth="240dp"
+                android:minHeight="240dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Controls Layout with Responsive Buttons -->
+        <LinearLayout
+            android:id="@+id/controlsLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="@dimen/controls_padding"
+            app:layout_constraintBottom_toTopOf="@id/securityIndicator"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="8dp">
+
+            <!-- Hint Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/hintButton"
+                style="@style/Widget.Material3.Button.TonalButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="💡"
+                android:textColor="@color/hint_button_text"
+                android:textSize="@dimen/button_text_size"
+                app:backgroundTint="@color/hint_button_bg"
+                app:cornerRadius="24dp"
+                android:layout_marginEnd="@dimen/button_margin"
+                app:icon="@drawable/ic_lightbulb"
+                app:iconTint="@color/hint_button_text"/>
+
+            <!-- Undo Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/undoButton"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="↶"
+                android:textColor="@color/undo_button_text"
+                android:textSize="@dimen/button_text_size"
+                app:strokeColor="@color/undo_button_stroke"
+                app:cornerRadius="24dp"
+                android:layout_marginEnd="@dimen/button_margin"
+                app:icon="@drawable/ic_undo"
+                app:iconTint="@color/undo_button_text"/>
+
+            <!-- Next Puzzle Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/nextPuzzleButton"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="▶"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_text_size"
+                app:backgroundTint="@color/puzzle_button_bg"
+                app:cornerRadius="24dp"
+                android:layout_marginEnd="@dimen/button_margin"
+                app:icon="@drawable/ic_puzzle"
+                app:iconTint="@color/white"/>
+
+            <!-- Emergency Unlock Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/emergencyUnlockButton"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="⚠"
+                android:textColor="@color/emergency_text"
+                android:textSize="@dimen/button_text_size"
+                app:backgroundTint="@color/emergency_bg"
+                app:cornerRadius="24dp"
+                app:icon="@drawable/ic_warning"
+                app:iconTint="@color/emergency_text"/>
+
+        </LinearLayout>
+
+        <!-- Security Indicator -->
+        <LinearLayout
+            android:id="@+id/securityIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/security_indicator_bg"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔒"
+                android:textSize="14sp"
+                android:layout_marginEnd="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Protected by ChessLock"
+                android:textSize="12sp"
+                android:textColor="@color/secondary_text"
+                android:fontFamily="sans-serif-condensed"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
