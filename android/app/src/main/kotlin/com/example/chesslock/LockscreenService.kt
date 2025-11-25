@@ -5,7 +5,6 @@ import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.app.PendingIntent
 import android.app.Service
-import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
@@ -34,25 +33,26 @@ class LockscreenService : Service() {
         }
     }
 
-    private val screenReceiver = object : BroadcastReceiver() {
-        override fun onReceive(context: Context?, intent: Intent?) {
-            when (intent?.action) {
-                Intent.ACTION_USER_PRESENT -> {// Trigger full-screen overlay via AccessibilityService
-                    showChessLockOverlay()
-                }
-            }
-        }
-    }
+    // Use ScreenStateReceiver instead of Accessibility Service (works on Tecno devices!)
+    private val screenReceiver = ScreenStateReceiver()
 
     override fun onCreate() {
-        super.onCreate()// Start as foreground service
+        super.onCreate()
+        
+        // Start as foreground service
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             createNotificationChannel()
             val notification = createNotification()
-            startForeground(NOTIFICATION_ID, notification)}
+            startForeground(NOTIFICATION_ID, notification)
+        }
         
-        // Register for USER_PRESENT (triggered after unlocking native lockscreen)
-        val filter = IntentFilter(Intent.ACTION_USER_PRESENT)
+        // Register for screen on/off events (NO ACCESSIBILITY NEEDED!)
+        val filter = IntentFilter().apply {
+            addAction(Intent.ACTION_SCREEN_ON)
+            addAction(Intent.ACTION_SCREEN_OFF)
+            addAction(Intent.ACTION_USER_PRESENT)
+        }
+        
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             registerReceiver(screenReceiver, filter, Context.RECEIVER_NOT_EXPORTED)
         } else {
@@ -94,18 +94,13 @@ class LockscreenService : Service() {
             .build()
     }
 
-    private fun showChessLockOverlay() {
-        // Trigger full-screen overlay via AccessibilityService
-        // Use explicit broadcast with package name for Android 8+ compatibility
-        val intent = Intent(ChessLockAccessibilityService.ACTION_SHOW_OVERLAY).apply {
-            setPackage(packageName) // Explicit broadcast
-        }
-        sendBroadcast(intent)
-    }
-
     override fun onDestroy() {
         super.onDestroy()
-        unregisterReceiver(screenReceiver)
+        try {
+            unregisterReceiver(screenReceiver)
+        } catch (e: Exception) {
+            // Receiver not registered or already unregistered
+        }
         
         // Stop foreground service
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {

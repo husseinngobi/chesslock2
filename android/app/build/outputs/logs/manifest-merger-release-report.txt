@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:1:1-100:12
-INJECTED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:1:1-100:12
-INJECTED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:1:1-100:12
-INJECTED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:1:1-100:12
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:1:1-105:12
+INJECTED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:1:1-105:12
+INJECTED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:1:1-105:12
+INJECTED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:1:1-105:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\0ec59f0e132acab708b79aed52b364e9\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\b0cde4615d67870957e8bae53c8a3630\transformed\appcompat-1.6.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\7a52f5c869223f4b7b270b9eff2ed5b3\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
@@ -109,8 +109,8 @@ ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest
 	android:name
 		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:25:19-63
 application
-ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:27:5-99:19
-INJECTED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:27:5-99:19
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:27:5-104:19
+INJECTED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:27:5-104:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\64b7d8e07455deaca36bcbe8176bc6ca\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\64b7d8e07455deaca36bcbe8176bc6ca\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.core:core:1.12.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\aa75243ce4483aebf6f16a8c7aef0bde\transformed\core-1.12.0\AndroidManifest.xml:28:5-89
@@ -216,25 +216,27 @@ ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest
 	android:name
 		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:82:17-76
 service#com.example.chesslock.ChessLockAccessibilityService
-ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:87:9-97:19
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:91:9-102:19
+	android:enabled
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:94:13-36
 	android:exported
-		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:90:13-36
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:95:13-37
 	android:permission
-		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:89:13-79
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:93:13-79
 	android:name
-		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:88:13-58
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:92:13-58
 intent-filter#action:name:android.accessibilityservice.AccessibilityService
-ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:91:13-93:29
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:96:13-98:29
 action#android.accessibilityservice.AccessibilityService
-ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:92:17-92
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:97:17-92
 	android:name
-		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:92:25-89
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:97:25-89
 meta-data#android.accessibilityservice
-ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:94:13-96:72
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:99:13-101:72
 	android:resource
-		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:96:17-69
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:101:17-69
 	android:name
-		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:95:17-60
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:100:17-60
 uses-sdk
 INJECTED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml

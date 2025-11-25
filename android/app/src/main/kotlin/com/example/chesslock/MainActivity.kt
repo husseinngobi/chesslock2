@@ -46,35 +46,72 @@ class MainActivity : Activity() {
             setBackgroundColor(Color.parseColor("#444444"))
         })
         
-        // Setup Section
-        layout.addView(createSectionTitle("Setup"))
+        // Setup Section - NEW: No Accessibility Service needed!
+        layout.addView(createSectionTitle("🔐 ChessLock Control"))
         
-        layout.addView(Button(this).apply {
-            text = "1. Enable Accessibility Service"
-            setBackgroundColor(Color.parseColor("#2196F3"))
+        // Enable/Disable ChessLock Toggle
+        val isEnabled = prefs.getBoolean("chesslockEnabled", true)
+        
+        val enableButton = Button(this).apply {
+            text = if (isEnabled) "✅ ChessLock ENABLED" else "❌ ChessLock DISABLED"
+            setBackgroundColor(if (isEnabled) Color.parseColor("#4CAF50") else Color.parseColor("#FF5722"))
             setTextColor(Color.WHITE)
-            setPadding(30, 30, 30, 30)
+            setPadding(40, 40, 40, 40)
+            textSize = 20f
             setOnClickListener {
-                startActivity(Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS).apply {
-                    addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-                })
+                val newState = !prefs.getBoolean("chesslockEnabled", true)
+                prefs.edit().putBoolean("chesslockEnabled", newState).apply()
+                
+                if (newState) {
+                    // Enable ChessLock - start service
+                    LockscreenService.start(this@MainActivity)
+                    text = "✅ ChessLock ENABLED"
+                    setBackgroundColor(Color.parseColor("#4CAF50"))
+                    Toast.makeText(this@MainActivity, "✅ ChessLock enabled! Lock your phone to test.", Toast.LENGTH_LONG).show()
+                } else {
+                    // Disable ChessLock - stop service
+                    LockscreenService.stop(this@MainActivity)
+                    text = "❌ ChessLock DISABLED"
+                    setBackgroundColor(Color.parseColor("#FF5722"))
+                    Toast.makeText(this@MainActivity, "❌ ChessLock disabled", Toast.LENGTH_SHORT).show()
+                }
             }
+        }
+        
+        layout.addView(enableButton)
+        
+        layout.addView(TextView(this).apply {
+            text = if (isEnabled) {
+                "🎉 ChessLock is active! Lock your phone to see the chess lockscreen."
+            } else {
+                "⚠️ ChessLock is disabled. Tap the button above to enable."
+            }
+            textSize = 16f
+            setTextColor(Color.parseColor("#AAAAAA"))
+            setPadding(20, 20, 20, 10)
         })
         
+        // Permission Setup
+        layout.addView(createSectionTitle("⚙️ Permissions (One-Time Setup)"))
+        
         layout.addView(Button(this).apply {
-            text = "2. Enable Draw Over Other Apps"
+            text = "1. Enable Draw Over Other Apps"
             setBackgroundColor(Color.parseColor("#2196F3"))
             setTextColor(Color.WHITE)
             setPadding(30, 30, 30, 30)
-            layoutParams = LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.MATCH_PARENT,
-                LinearLayout.LayoutParams.WRAP_CONTENT
-            ).apply { topMargin = 15 }
             setOnClickListener {
                 startActivity(Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION).apply {
                     addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
                 })
             }
+        })
+        
+        layout.addView(TextView(this).apply {
+            text = "✅ NO Accessibility Service needed!\nWorks on ALL devices including Tecno/Infinix!"
+            textSize = 14f
+            setTextColor(Color.parseColor("#4CAF50"))
+            setPadding(20, 15, 20, 10)
+            setTypeface(typeface, android.graphics.Typeface.BOLD)
         })
         
         // Game Mode Section
@@ -304,14 +341,14 @@ class MainActivity : Activity() {
         layout.addView(TextView(this).apply {
             text = """
                 📱 Setup Instructions:
-                1. Enable Accessibility Service (above)
-                2. Enable Draw Over Other Apps permission
+                1. Enable "Draw Over Other Apps" permission (above)
+                2. Tap "ChessLock ENABLED" button to activate
                 3. Lock your phone to test - ChessLock will appear!
                 
                 🔐 Lockscreen Behavior:
-                • Respects your native lock (PIN/Pattern)
-                • After native unlock, ChessLock appears
-                • Solve puzzle OR defeat AI to unlock
+                • Respects your native lock (PIN/Pattern/Fingerprint)
+                • After you unlock, ChessLock appears immediately
+                • Solve puzzle OR defeat AI to unlock phone
                 • Emergency unlock bypasses chess
                 
                 ♟️ In Puzzle Mode:

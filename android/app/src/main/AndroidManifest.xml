@@ -72,7 +72,7 @@
             </intent-filter>
         </receiver>
         
-        <!-- Lockscreen Service -->
+        <!-- Lockscreen Service - Uses ScreenStateReceiver for Tecno compatibility -->
         <service
             android:name=".LockscreenService"
             android:enabled="true"
@@ -83,11 +83,16 @@
                 android:value="lockscreen" />
         </service>
         
-        <!-- Accessibility Service for overlay capability -->
+        <!-- 
+            Accessibility Service - OPTIONAL (kept for backward compatibility)
+            NOT REQUIRED on Tecno/Infinix devices!
+            The app now uses ScreenStateReceiver instead which works on ALL devices.
+        -->
         <service
             android:name=".ChessLockAccessibilityService"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
-            android:exported="true">
+            android:enabled="false"
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.accessibilityservice.AccessibilityService" />
             </intent-filter>
