@@ -1,52 +1,66 @@
-# ChessLock for Tecno/Infinix Devices - WORKING
+# ChessLock for Tecno/Infinix Devices - ADB Installation Required
 
-## What Was Fixed
+## The Real Problem
 
-**MAJOR UPDATE:** ChessLock now works on **ALL Tecno/Infinix/Itel devices** without needing Accessibility Service!
+Tecno/Infinix devices on Android 13+ **block Accessibility Service** for sideloaded apps with:
+> "Restricted setting - For your security, this setting is currently unavailable"
 
-### Technical Changes
+## The ONLY Solution That Works
 
-1. Removed Accessibility Service requirement completely
-2. Uses ScreenStateReceiver instead (works on ALL devices)
-3. Properly signed with release certificate
-4. Android 13+ compatible with queries tag
-5. No "Restricted setting" errors anymore
+**You MUST use ADB (Android Debug Bridge)** to grant Accessibility permission. This bypasses Tecno's restriction.
 
-## Installation Steps
+### What We Fixed
 
-### Step 1: Uninstall Old Version
+1. Properly signed release certificate
+2. Android 13+ compatible with queries tag
+3. Created automatic ADB installation script
+4. Accessibility Service properly configured
 
-If you have an old version installed:
+## Installation Steps for Tecno Devices
 
-Settings → Apps → ChessLock → Uninstall
+### AUTOMATIC METHOD (Recommended)
 
-### Step 2: Enable Unknown Sources
+1. **Enable USB Debugging on your phone:**
+   - Settings → About Phone → Tap "Build Number" 7 times
+   - Go back → System → Developer Options
+   - Enable "USB Debugging"
 
-Settings → Security → Install unknown apps → Find your file manager (e.g., Files, My Files) → Enable "Allow from this source"
+2. **Connect phone to PC via USB cable**
 
-### Step 3: Install the Release APK
+3. **Allow USB debugging when popup appears on phone**
 
-Transfer the new `app-release.apk` to your phone and install it.
+4. **Run the installation script:**
+   - Double-click `INSTALL_TECNO.bat` in the project folder
+   - Wait for installation to complete
 
-### Step 4: Grant Overlay Permission
+5. **Done!** Open ChessLock app and lock your phone to test
 
-Open ChessLock app and:
+### MANUAL METHOD (If script doesn't work)
 
-1. Tap "Enable Draw Over Other Apps" button
-2. Find ChessLock in the list
-3. Toggle "Allow display over other apps" to ON
-4. Return to ChessLock app
+If the automatic script fails, do this manually:
 
-### Step 5: Enable ChessLock
+1. **Uninstall old ChessLock** (if installed)
 
-Tap the big "ChessLock ENABLED" button in the app (It will turn green when active)
+2. **Enable USB Debugging:**
+   - Settings → About Phone → Tap "Build Number" 7 times
+   - Settings → System → Developer Options → Enable "USB Debugging"
 
-### Step 6: Test It
+3. **Connect phone to PC via USB**
 
-1. Lock your phone (press power button)
-2. Unlock with your PIN/Pattern/Fingerprint
-3. Chess lockscreen should appear immediately
-4. Play chess to unlock your phone
+4. **Open PowerShell in project folder and run:**
+
+```powershell
+cd android
+$sdk = (Get-Content "local.properties" | Select-String "sdk.dir" | ForEach-Object { $_.ToString().Split("=")[1].Trim() })
+& "$sdk\platform-tools\adb.exe" install -r -g app\build\outputs\apk\release\app-release.apk
+& "$sdk\platform-tools\adb.exe" shell pm grant com.example.chesslock android.permission.SYSTEM_ALERT_WINDOW
+& "$sdk\platform-tools\adb.exe" shell settings put secure enabled_accessibility_services com.example.chesslock/.ChessLockAccessibilityService
+& "$sdk\platform-tools\adb.exe" shell settings put secure accessibility_enabled 1
+```
+
+**Open ChessLock app** and tap the green "ChessLock ENABLED" button
+
+**Test:** Lock phone → Unlock with fingerprint → Chess should appear!
 
 ## What Makes This Work on Tecno
 
@@ -60,9 +74,9 @@ Tap the big "ChessLock ENABLED" button in the app (It will turn green when activ
 - No "Restricted setting" errors
 - No special workarounds needed
 
-## How to Use ChessLock
+How to Use ChessLock
 
-### In the App
+In the App
 
 - **Big green button:** ChessLock is enabled (lock phone to test)
 - **Big red button:** ChessLock is disabled (phone works normally)

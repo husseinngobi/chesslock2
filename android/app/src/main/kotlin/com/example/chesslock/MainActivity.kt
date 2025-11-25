@@ -92,13 +92,29 @@ class MainActivity : Activity() {
         })
         
         // Permission Setup
-        layout.addView(createSectionTitle("⚙️ Permissions (One-Time Setup)"))
+        layout.addView(createSectionTitle("⚙️ Required Permissions"))
         
         layout.addView(Button(this).apply {
-            text = "1. Enable Draw Over Other Apps"
+            text = "1. Enable Accessibility Service"
             setBackgroundColor(Color.parseColor("#2196F3"))
             setTextColor(Color.WHITE)
             setPadding(30, 30, 30, 30)
+            setOnClickListener {
+                startActivity(Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS).apply {
+                    addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                })
+            }
+        })
+        
+        layout.addView(Button(this).apply {
+            text = "2. Enable Draw Over Other Apps"
+            setBackgroundColor(Color.parseColor("#2196F3"))
+            setTextColor(Color.WHITE)
+            setPadding(30, 30, 30, 30)
+            layoutParams = LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT
+            ).apply { topMargin = 15 }
             setOnClickListener {
                 startActivity(Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION).apply {
                     addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
@@ -107,9 +123,9 @@ class MainActivity : Activity() {
         })
         
         layout.addView(TextView(this).apply {
-            text = "✅ NO Accessibility Service needed!\nWorks on ALL devices including Tecno/Infinix!"
+            text = "⚠️ TECNO USERS: If you see 'Restricted setting' error,\nuse ADB method (see instructions file)"
             textSize = 14f
-            setTextColor(Color.parseColor("#4CAF50"))
+            setTextColor(Color.parseColor("#FF9800"))
             setPadding(20, 15, 20, 10)
             setTypeface(typeface, android.graphics.Typeface.BOLD)
         })
