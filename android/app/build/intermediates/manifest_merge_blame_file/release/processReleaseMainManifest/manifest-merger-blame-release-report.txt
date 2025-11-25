@@ -8,222 +8,237 @@
 8        android:minSdkVersion="24"
 9        android:targetSdkVersion="36" />
 10
-11    <!-- Permissions for lockscreen functionality -->
-12    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-12-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:4:5-81
-12-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:4:22-78
-13    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-13-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:5:5-77
-13-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:5:22-74
-14    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
-14-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:6:5-89
-14-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:6:22-86
-15    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-15-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:7:5-77
-15-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:7:22-74
-16    <uses-permission android:name="android.permission.CAMERA" />
-16-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:8:5-65
-16-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:8:22-62
-17    <uses-permission android:name="android.permission.FLASHLIGHT" />
-17-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:9:5-69
-17-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:9:22-66
-18    <uses-permission android:name="android.permission.CALL_PHONE" />
-18-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:10:5-69
-18-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:10:22-66
-19    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-19-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:11:5-75
-19-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:11:22-72
-20    <uses-permission android:name="android.permission.WAKE_LOCK" />
-20-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:12:5-68
-20-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:12:22-65
-21    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
-21-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:13:5-75
-21-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:13:22-72
-22    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-22-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:14:5-78
-22-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:14:22-75
-23
-24    <uses-feature
-24-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:16:5-85
-25        android:name="android.hardware.camera"
-25-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:16:19-57
-26        android:required="false" />
-26-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:16:58-82
-27    <uses-feature
-27-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:17:5-91
-28        android:name="android.hardware.camera.flash"
-28-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:17:19-63
-29        android:required="false" />
-29-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:17:64-88
-30
-31    <permission
-31-->[androidx.core:core:1.12.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\aa75243ce4483aebf6f16a8c7aef0bde\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
-32        android:name="com.example.chesslock.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-32-->[androidx.core:core:1.12.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\aa75243ce4483aebf6f16a8c7aef0bde\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
-33        android:protectionLevel="signature" />
-33-->[androidx.core:core:1.12.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\aa75243ce4483aebf6f16a8c7aef0bde\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
-34
-35    <uses-permission android:name="com.example.chesslock.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-35-->[androidx.core:core:1.12.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\aa75243ce4483aebf6f16a8c7aef0bde\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
-35-->[androidx.core:core:1.12.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\aa75243ce4483aebf6f16a8c7aef0bde\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
-36
-37    <application
-37-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:19:5-91:19
-38        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-38-->[androidx.core:core:1.12.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\aa75243ce4483aebf6f16a8c7aef0bde\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
-39        android:extractNativeLibs="false"
-40        android:icon="@mipmap/ic_launcher"
-40-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:21:9-43
-41        android:label="ChessLock" >
-41-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:20:9-34
-42        <activity
-42-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:22:9-33:20
-43            android:name="com.example.chesslock.MainActivity"
-43-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:23:13-41
-44            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
-44-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:27:13-83
-45            android:exported="true"
-45-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:24:13-36
-46            android:hardwareAccelerated="true"
-46-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:28:13-47
-47            android:launchMode="singleTop"
-47-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:25:13-43
-48            android:theme="@android:style/Theme.Material.Light.NoActionBar" >
-48-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:26:13-76
-49            <intent-filter>
-49-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:29:13-32:29
-50                <action android:name="android.intent.action.MAIN" />
-50-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:30:17-68
-50-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:30:25-66
-51
-52                <category android:name="android.intent.category.LAUNCHER" />
-52-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:31:17-76
-52-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:31:27-74
-53            </intent-filter>
-54        </activity>
-55
-56        <!-- Transparent helper Activity to dismiss keyguard -->
-57        <activity
-57-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:36:9-41:40
-58            android:name="com.example.chesslock.KeyguardDismissActivity"
-58-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:37:13-52
-59            android:excludeFromRecents="true"
-59-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:39:13-46
-60            android:exported="false"
-60-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:41:13-37
-61            android:noHistory="true"
-61-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:40:13-37
-62            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-62-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:38:13-72
-63
-64        <!-- Device Admin Receiver for lockscreen functionality -->
-65        <receiver
-65-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:44:9-54:20
-66            android:name="com.example.chesslock.ChessLockAdminReceiver"
-66-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:45:13-51
-67            android:exported="true"
-67-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:47:13-36
-68            android:permission="android.permission.BIND_DEVICE_ADMIN" >
-68-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:46:13-70
-69            <meta-data
-69-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:48:13-50:56
-70                android:name="android.app.device_admin"
-70-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:49:17-56
-71                android:resource="@xml/device_admin" />
-71-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:50:17-53
+11    <!-- CRITICAL: Android 13+ requirement for Tecno/Infinix devices -->
+12    <queries>
+12-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:4:5-9:15
+13        <package android:name="com.android.settings" />
+13-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:5:9-55
+13-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:5:18-53
+14
+15        <intent>
+15-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:6:9-8:18
+16            <action android:name="android.intent.action.MAIN" />
+16-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:7:13-65
+16-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:7:21-62
+17        </intent>
+18    </queries>
+19
+20    <!-- Permissions for lockscreen functionality -->
+21    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+21-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:12:5-81
+21-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:12:22-78
+22    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+22-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:13:5-77
+22-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:13:22-74
+23    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+23-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:14:5-89
+23-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:14:22-86
+24    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+24-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:15:5-77
+24-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:15:22-74
+25    <uses-permission android:name="android.permission.CAMERA" />
+25-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:16:5-65
+25-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:16:22-62
+26    <uses-permission android:name="android.permission.FLASHLIGHT" />
+26-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:17:5-69
+26-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:17:22-66
+27    <uses-permission android:name="android.permission.CALL_PHONE" />
+27-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:18:5-69
+27-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:18:22-66
+28    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+28-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:19:5-75
+28-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:19:22-72
+29    <uses-permission android:name="android.permission.WAKE_LOCK" />
+29-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:20:5-68
+29-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:20:22-65
+30    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+30-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:21:5-75
+30-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:21:22-72
+31    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+31-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:22:5-78
+31-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:22:22-75
+32
+33    <uses-feature
+33-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:24:5-85
+34        android:name="android.hardware.camera"
+34-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:24:19-57
+35        android:required="false" />
+35-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:24:58-82
+36    <uses-feature
+36-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:25:5-91
+37        android:name="android.hardware.camera.flash"
+37-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:25:19-63
+38        android:required="false" />
+38-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:25:64-88
+39
+40    <permission
+40-->[androidx.core:core:1.12.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\aa75243ce4483aebf6f16a8c7aef0bde\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+41        android:name="com.example.chesslock.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+41-->[androidx.core:core:1.12.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\aa75243ce4483aebf6f16a8c7aef0bde\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+42        android:protectionLevel="signature" />
+42-->[androidx.core:core:1.12.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\aa75243ce4483aebf6f16a8c7aef0bde\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+43
+44    <uses-permission android:name="com.example.chesslock.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+44-->[androidx.core:core:1.12.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\aa75243ce4483aebf6f16a8c7aef0bde\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+44-->[androidx.core:core:1.12.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\aa75243ce4483aebf6f16a8c7aef0bde\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+45
+46    <application
+46-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:27:5-99:19
+47        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+47-->[androidx.core:core:1.12.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\aa75243ce4483aebf6f16a8c7aef0bde\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+48        android:extractNativeLibs="false"
+49        android:icon="@mipmap/ic_launcher"
+49-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:29:9-43
+50        android:label="ChessLock" >
+50-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:28:9-34
+51        <activity
+51-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:30:9-41:20
+52            android:name="com.example.chesslock.MainActivity"
+52-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:31:13-41
+53            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+53-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:35:13-83
+54            android:exported="true"
+54-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:32:13-36
+55            android:hardwareAccelerated="true"
+55-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:36:13-47
+56            android:launchMode="singleTop"
+56-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:33:13-43
+57            android:theme="@android:style/Theme.Material.Light.NoActionBar" >
+57-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:34:13-76
+58            <intent-filter>
+58-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:37:13-40:29
+59                <action android:name="android.intent.action.MAIN" />
+59-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:7:13-65
+59-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:7:21-62
+60
+61                <category android:name="android.intent.category.LAUNCHER" />
+61-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:39:17-76
+61-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:39:27-74
+62            </intent-filter>
+63        </activity>
+64
+65        <!-- Transparent helper Activity to dismiss keyguard -->
+66        <activity
+66-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:44:9-49:40
+67            android:name="com.example.chesslock.KeyguardDismissActivity"
+67-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:45:13-52
+68            android:excludeFromRecents="true"
+68-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:47:13-46
+69            android:exported="false"
+69-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:49:13-37
+70            android:noHistory="true"
+70-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:48:13-37
+71            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+71-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:46:13-72
 72
-73            <intent-filter>
-73-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:51:13-53:29
-74                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
-74-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:52:17-82
-74-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:52:25-79
-75            </intent-filter>
-76        </receiver>
-77
-78        <!-- Boot Receiver - Auto-start lockscreen on device boot -->
-79        <receiver
-79-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:57:9-65:20
-80            android:name="com.example.chesslock.BootReceiver"
-80-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:58:13-41
-81            android:enabled="true"
-81-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:59:13-35
-82            android:exported="true" >
-82-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:60:13-36
-83            <intent-filter>
-83-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:61:13-64:29
-84                <action android:name="android.intent.action.BOOT_COMPLETED" />
-84-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:62:17-79
-84-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:62:25-76
-85                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
-85-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:63:17-82
-85-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:63:25-79
-86            </intent-filter>
-87        </receiver>
-88
-89        <!-- Lockscreen Service -->
-90        <service
-90-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:68:9-76:19
-91            android:name="com.example.chesslock.LockscreenService"
-91-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:69:13-46
-92            android:enabled="true"
-92-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:70:13-35
-93            android:exported="false"
-93-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:71:13-37
-94            android:foregroundServiceType="specialUse" >
-94-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:72:13-55
-95            <property
-95-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:73:13-75:46
-96                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
-96-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:74:17-76
-97                android:value="lockscreen" />
-97-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:75:17-43
-98        </service>
-99
-100        <!-- Accessibility Service for overlay capability -->
-101        <service
-101-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:79:9-89:19
-102            android:name="com.example.chesslock.ChessLockAccessibilityService"
-102-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:80:13-58
-103            android:exported="true"
-103-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:82:13-36
-104            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
-104-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:81:13-79
-105            <intent-filter>
-105-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:83:13-85:29
-106                <action android:name="android.accessibilityservice.AccessibilityService" />
-106-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:84:17-92
-106-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:84:25-89
-107            </intent-filter>
+73        <!-- Device Admin Receiver for lockscreen functionality -->
+74        <receiver
+74-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:52:9-62:20
+75            android:name="com.example.chesslock.ChessLockAdminReceiver"
+75-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:53:13-51
+76            android:exported="true"
+76-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:55:13-36
+77            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+77-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:54:13-70
+78            <meta-data
+78-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:56:13-58:56
+79                android:name="android.app.device_admin"
+79-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:57:17-56
+80                android:resource="@xml/device_admin" />
+80-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:58:17-53
+81
+82            <intent-filter>
+82-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:59:13-61:29
+83                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+83-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:60:17-82
+83-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:60:25-79
+84            </intent-filter>
+85        </receiver>
+86
+87        <!-- Boot Receiver - Auto-start lockscreen on device boot -->
+88        <receiver
+88-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:65:9-73:20
+89            android:name="com.example.chesslock.BootReceiver"
+89-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:66:13-41
+90            android:enabled="true"
+90-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:67:13-35
+91            android:exported="true" >
+91-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:68:13-36
+92            <intent-filter>
+92-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:69:13-72:29
+93                <action android:name="android.intent.action.BOOT_COMPLETED" />
+93-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:70:17-79
+93-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:70:25-76
+94                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+94-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:71:17-82
+94-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:71:25-79
+95            </intent-filter>
+96        </receiver>
+97
+98        <!-- Lockscreen Service -->
+99        <service
+99-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:76:9-84:19
+100            android:name="com.example.chesslock.LockscreenService"
+100-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:77:13-46
+101            android:enabled="true"
+101-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:78:13-35
+102            android:exported="false"
+102-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:79:13-37
+103            android:foregroundServiceType="specialUse" >
+103-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:80:13-55
+104            <property
+104-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:81:13-83:46
+105                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+105-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:82:17-76
+106                android:value="lockscreen" />
+106-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:83:17-43
+107        </service>
 108
-109            <meta-data
-109-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:86:13-88:72
-110                android:name="android.accessibilityservice"
-110-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:87:17-60
-111                android:resource="@xml/accessibility_service_config" />
-111-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:88:17-69
-112        </service>
-113
-114        <provider
-114-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\64b7d8e07455deaca36bcbe8176bc6ca\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-115            android:name="androidx.startup.InitializationProvider"
-115-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\64b7d8e07455deaca36bcbe8176bc6ca\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
-116            android:authorities="com.example.chesslock.androidx-startup"
-116-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\64b7d8e07455deaca36bcbe8176bc6ca\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
-117            android:exported="false" >
-117-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\64b7d8e07455deaca36bcbe8176bc6ca\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+109        <!-- Accessibility Service for overlay capability -->
+110        <service
+110-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:87:9-97:19
+111            android:name="com.example.chesslock.ChessLockAccessibilityService"
+111-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:88:13-58
+112            android:exported="true"
+112-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:90:13-36
+113            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+113-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:89:13-79
+114            <intent-filter>
+114-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:91:13-93:29
+115                <action android:name="android.accessibilityservice.AccessibilityService" />
+115-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:92:17-92
+115-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:92:25-89
+116            </intent-filter>
+117
 118            <meta-data
-118-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\64b7d8e07455deaca36bcbe8176bc6ca\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-119                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-119-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\64b7d8e07455deaca36bcbe8176bc6ca\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
-120                android:value="androidx.startup" />
-120-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\64b7d8e07455deaca36bcbe8176bc6ca\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
-121            <meta-data
-121-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\1cc5c5fd718d816809ec64119b238df9\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-122                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-122-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\1cc5c5fd718d816809ec64119b238df9\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-123                android:value="androidx.startup" />
-123-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\1cc5c5fd718d816809ec64119b238df9\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-124        </provider>
-125    </application>
-126
-127</manifest>
+118-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:94:13-96:72
+119                android:name="android.accessibilityservice"
+119-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:95:17-60
+120                android:resource="@xml/accessibility_service_config" />
+120-->D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:96:17-69
+121        </service>
+122
+123        <provider
+123-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\64b7d8e07455deaca36bcbe8176bc6ca\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+124            android:name="androidx.startup.InitializationProvider"
+124-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\64b7d8e07455deaca36bcbe8176bc6ca\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+125            android:authorities="com.example.chesslock.androidx-startup"
+125-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\64b7d8e07455deaca36bcbe8176bc6ca\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+126            android:exported="false" >
+126-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\64b7d8e07455deaca36bcbe8176bc6ca\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+127            <meta-data
+127-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\64b7d8e07455deaca36bcbe8176bc6ca\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+128                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+128-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\64b7d8e07455deaca36bcbe8176bc6ca\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+129                android:value="androidx.startup" />
+129-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\64b7d8e07455deaca36bcbe8176bc6ca\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+130            <meta-data
+130-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\1cc5c5fd718d816809ec64119b238df9\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+131                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+131-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\1cc5c5fd718d816809ec64119b238df9\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+132                android:value="androidx.startup" />
+132-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\1cc5c5fd718d816809ec64119b238df9\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+133        </provider>
+134    </application>
+135
+136</manifest>

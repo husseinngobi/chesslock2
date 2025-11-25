@@ -8,6 +8,15 @@
         android:minSdkVersion="24"
         android:targetSdkVersion="36" />
 
+    <!-- CRITICAL: Android 13+ requirement for Tecno/Infinix devices -->
+    <queries>
+        <package android:name="com.android.settings" />
+
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+        </intent>
+    </queries>
+
     <!-- Permissions for lockscreen functionality -->
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
