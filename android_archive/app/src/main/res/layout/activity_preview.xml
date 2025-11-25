@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lockscreen_gradient_bg"
+    tools:context=".PreviewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Professional Title with System Info -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/lockscreen_preview"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"/>
+
+            <!-- Live Preview Indicator -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp">
+
+                <View
+                    android:id="@+id/liveIndicator"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:background="@drawable/circle_green"
+                    android:layout_marginEnd="6dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LIVE PREVIEW"
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Enhanced Preview Container with System Elements -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="520dp"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="12dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/lockscreen_gradient_bg">
+
+                <!-- Professional Status Bar -->
+                <LinearLayout
+                    android:id="@+id/statusBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="16dp"
+                    android:background="@color/black_alpha_20"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <!-- Time in status bar -->
+                    <TextView
+                        android:id="@+id/statusTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6:11"
+                        android:textSize="14sp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"/>
+
+                    <!-- System indicators placeholder -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="📶 📶 85%🔋"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+                <!-- Professional Time Display with Visual Hierarchy -->
+                <LinearLayout
+                    android:id="@+id/timeContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    app:layout_constraintTop_toBottomOf="@id/statusBar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="24dp">
+
+                    <!-- Main Time Display -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/hourText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="6"
+                            android:textSize="@dimen/time_display_size"
+                            android:textColor="@color/white"
+                            android:fontFamily="monospace"
+                            android:includeFontPadding="false"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            android:textSize="@dimen/time_display_size"
+                            android:textColor="@color/white_alpha_80"
+                            android:layout_marginHorizontal="1dp"
+                            android:fontFamily="monospace"
+                            android:includeFontPadding="false"/>
+
+                        <TextView
+                            android:id="@+id/minuteText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="11"
+                            android:textSize="@dimen/time_display_size"
+                            android:textColor="@color/white"
+                            android:fontFamily="monospace"
+                            android:includeFontPadding="false"/>
+
+                        <TextView
+                            android:id="@+id/amPmText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PM"
+                            android:textSize="12sp"
+                            android:textColor="@color/white_alpha_80"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="sans-serif-medium"/>
+
+                    </LinearLayout>
+
+                    <!-- Professional Date Display -->
+                    <TextView
+                        android:id="@+id/dateText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thursday, September 18"
+                        android:textSize="@dimen/date_display_size"
+                        android:textColor="@color/white_alpha_90"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="sans-serif-light"
+                        android:letterSpacing="0.01"/>
+
+                </LinearLayout>
+
+                <!-- Dynamic Chess Puzzle Section -->
+                <LinearLayout
+                    android:id="@+id/puzzleSection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    app:layout_constraintTop_toBottomOf="@id/timeContainer"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="20dp">
+
+                    <!-- Dynamic Puzzle Prompt -->
+                    <TextView
+                        android:id="@+id/puzzlePrompt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Solve: Back Rank Mate in 1"
+                        android:textSize="@dimen/puzzle_prompt_size"
+                        android:textColor="@color/chess_gold"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-medium"
+                        android:layout_marginBottom="8dp"
+                        android:paddingHorizontal="12dp"
+                        android:paddingVertical="4dp"/>
+
+                    <!-- Interactive Chess Board - Matches Real Lock Screen -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="280dp"
+                        android:layout_height="280dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="4dp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="@dimen/board_margin_horizontal"
+                        android:layout_marginBottom="12dp">
+
+                        <com.ngobi.chesslock.ChessBoardView
+                            android:id="@+id/chessBoardView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="4dp"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Interaction Hints -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="👆 Tap pieces to solve puzzle to unlock"
+                        android:textSize="11sp"
+                        android:textColor="@color/white_alpha_70"
+                        android:fontFamily="sans-serif"
+                        android:layout_marginTop="4dp"/>
+
+                </LinearLayout>
+
+                <!-- Professional Lock Interaction Area -->
+                <LinearLayout
+                    android:id="@+id/lockInteractionArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingHorizontal="24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="16dp">
+
+                    <!-- Emergency Unlock Button -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginEnd="32dp">
+
+                        <TextView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:text="🔒"
+                            android:textSize="24sp"
+                            android:gravity="center"
+                            android:background="@drawable/circle_button_background"
+                            android:padding="8dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Emergency"
+                            android:textSize="10sp"
+                            android:textColor="@color/white_alpha_80"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="sans-serif"/>
+
+                    </LinearLayout>
+
+                    <!-- Hint Button -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginStart="32dp">
+
+                        <TextView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:text="💡"
+                            android:textSize="24sp"
+                            android:gravity="center"
+                            android:background="@drawable/circle_button_background"
+                            android:padding="8dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hint"
+                            android:textSize="10sp"
+                            android:textColor="@color/white_alpha_80"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="sans-serif"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Enhanced Customization Section -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/white_alpha_10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="⚙️ Customization Options"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_marginBottom="20dp"/>
+
+                <!-- Simplified Difficulty Selector -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="24dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="♟️ Puzzle Difficulty"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:layout_marginBottom="12dp"/>
+
+                    <RadioGroup
+                        android:id="@+id/difficultyGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <RadioButton
+                            android:id="@+id/easyRadio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🟢 EASY"
+                            android:textColor="@color/white"
+                            android:buttonTint="@color/difficulty_easy"
+                            android:layout_marginEnd="16dp"
+                            android:checked="true"/>
+
+                        <RadioButton
+                            android:id="@+id/mediumRadio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🟡 MEDIUM"
+                            android:textColor="@color/white"
+                            android:buttonTint="@color/difficulty_medium"
+                            android:layout_marginEnd="16dp"/>
+
+                        <RadioButton
+                            android:id="@+id/hardRadio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🔴 HARD"
+                            android:textColor="@color/white"
+                            android:buttonTint="@color/difficulty_hard"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <!-- Enhanced Board Style Selector -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="24dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="🎨 Board Theme"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:layout_marginBottom="12dp"/>
+
+                    <RadioGroup
+                        android:id="@+id/boardStyleGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <RadioButton
+                            android:id="@+id/classicRadio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🏛️ CLASSIC"
+                            android:textColor="@color/white"
+                            android:buttonTint="@color/chess_gold"
+                            android:layout_marginEnd="16dp"
+                            android:checked="true"/>
+
+                        <RadioButton
+                            android:id="@+id/modernRadio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🔲 MINIMAL"
+                            android:textColor="@color/white"
+                            android:buttonTint="@color/chess_silver"
+                            android:layout_marginEnd="16dp"/>
+
+                        <RadioButton
+                            android:id="@+id/woodenRadio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🌲 WOODEN"
+                            android:textColor="@color/white"
+                            android:buttonTint="@color/wooden_brown"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <!-- Enhanced Sound Settings -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="🔊 Audio Settings"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:layout_marginBottom="12dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="🎵 Enable Sound Effects"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:fontFamily="sans-serif"/>
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/soundEnabledSwitch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:thumbTint="@color/chess_gold"
+                            app:trackTint="@color/switch_track_tint"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Professional Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            style="?android:attr/buttonBarStyle"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/applyButton"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="✅ APPLY SETTINGS"
+                android:backgroundTint="@color/chess_gold"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="sans-serif-medium"/>
+
+            <Button
+                android:id="@+id/resetButton"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="🔄 RESET"
+                android:backgroundTint="@color/red_600"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp"
+                android:fontFamily="sans-serif-medium"/>
+
+        </LinearLayout>
+
+        <!-- Test Lock Screen Button -->
+        <Button
+            android:id="@+id/testLockButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="🚀 TEST LOCK SCREEN"
+            android:textColor="@color/chess_gold"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/swipe_hint_background"/>
+
+        <!-- Accessibility Information -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="♿ ChessLock supports accessibility features including high contrast, screen readers, and font scaling"
+            android:textSize="11sp"
+            android:textColor="@color/white_alpha_80"
+            android:fontFamily="sans-serif"
+            android:lineSpacingMultiplier="1.2"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+</ScrollView>

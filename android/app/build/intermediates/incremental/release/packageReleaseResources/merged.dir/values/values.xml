@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_background">#FF9800</color>
+    <string name="accessibility_service_description">ChessLock requires accessibility permission to display the lockscreen overlay over all apps. This permission is only used to show the chess puzzle lockscreen when you unlock your device.</string>
+    <string name="app_name">ChessLock</string>
+    <style name="LaunchTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        
+        <item name="android:windowBackground">@drawable/launch_background</item>
+    </style>
+    <style name="NormalTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">?android:colorBackground</item>
+    </style>
+</resources>

@@ -1,0 +1,344 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:1:1-92:12
+MERGED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:1:1-92:12
+INJECTED from D:\Final_project-2025\chesslock2\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from D:\Final_project-2025\chesslock2\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from D:\Final_project-2025\chesslock2\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\0ec59f0e132acab708b79aed52b364e9\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\b0cde4615d67870957e8bae53c8a3630\transformed\appcompat-1.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\7a52f5c869223f4b7b270b9eff2ed5b3\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.6.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\9e7f3e32b8eaa893f1b01c2fea4f52e8\transformed\jetified-activity-1.6.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\3f26aa378b920344f23e59ef6ef6ca44\transformed\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\e7e52cafae30ef20dffec172ee8f862a\transformed\jetified-emoji2-views-helper-1.2.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\64b7d8e07455deaca36bcbe8176bc6ca\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\3e95be0d40ec2f3e34843c71e8a5f374\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\18812fe6734d1d3b1228ffe237b2d0ac\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\3a8529c4152351c1cd00626ae492faab\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\ffb9ca64d1bd1ffcbad4aad2b97f96fa\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\e38aca3d319d39ef8fd95963f0cba511\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.12.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\aa75243ce4483aebf6f16a8c7aef0bde\transformed\core-1.12.0\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\27147a66084d41e2a96857db33ee9515\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\2e9ee44601e62d43a07eb2d7a47da36a\transformed\jetified-lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.12.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\4d194d8484071216ff4d7bf0780e0391\transformed\jetified-core-ktx-1.12.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\abd93623b9f933c591f7b7233c8e2413\transformed\jetified-savedstate-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\ed1e99123eb949d31e9b4b466410f52e\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\c712b46a8b25f4bceb30e7e1c60db1e7\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\1cc5c5fd718d816809ec64119b238df9\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\de8e4af5e9f4dbe0c9ef9cfd192007c1\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\360275508d0127bd4487fd8420f0e09a\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\6ea63e1f038f29bb11b2f6f93970a239\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\654c906ab278703e96af5649b5021711\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\8dd0454869b368f4a0918e71372063f7\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\9fa55d716dc526465881724dac827c26\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\72a4023b07b9a3a107fcc5d8425d4411\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\7f314a4e6f9628c793a20eae9c8bd0d3\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+	package
+		INJECTED from D:\Final_project-2025\chesslock2\android\app\src\debug\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Final_project-2025\chesslock2\android\app\src\debug\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\Final_project-2025\chesslock2\android\app\src\debug\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:4:5-81
+	android:name
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:4:22-78
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:5:5-77
+	android:name
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:5:22-74
+uses-permission#android.permission.FOREGROUND_SERVICE_SPECIAL_USE
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:6:5-89
+	android:name
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:6:22-86
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:7:5-77
+	android:name
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:7:22-74
+uses-permission#android.permission.CAMERA
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:8:5-65
+	android:name
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:8:22-62
+uses-permission#android.permission.FLASHLIGHT
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:9:5-69
+	android:name
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:9:22-66
+uses-permission#android.permission.CALL_PHONE
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:10:5-69
+	android:name
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:10:22-66
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:11:5-75
+	android:name
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:11:22-72
+uses-permission#android.permission.WAKE_LOCK
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:12:5-68
+	android:name
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:12:22-65
+uses-permission#android.permission.DISABLE_KEYGUARD
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:13:5-75
+	android:name
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:13:22-72
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:14:5-78
+	android:name
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:14:22-75
+uses-feature#android.hardware.camera
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:16:5-85
+	android:required
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:16:58-82
+	android:name
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:16:19-57
+uses-feature#android.hardware.camera.flash
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:17:5-91
+	android:required
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:17:64-88
+	android:name
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:17:19-63
+application
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:19:5-91:19
+INJECTED from D:\Final_project-2025\chesslock2\android\app\src\debug\AndroidManifest.xml
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\64b7d8e07455deaca36bcbe8176bc6ca\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\64b7d8e07455deaca36bcbe8176bc6ca\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.12.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\aa75243ce4483aebf6f16a8c7aef0bde\transformed\core-1.12.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.12.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\aa75243ce4483aebf6f16a8c7aef0bde\transformed\core-1.12.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\1cc5c5fd718d816809ec64119b238df9\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\1cc5c5fd718d816809ec64119b238df9\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\6ea63e1f038f29bb11b2f6f93970a239\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\6ea63e1f038f29bb11b2f6f93970a239\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\654c906ab278703e96af5649b5021711\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\654c906ab278703e96af5649b5021711\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+	android:extractNativeLibs
+		INJECTED from D:\Final_project-2025\chesslock2\android\app\src\debug\AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.12.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\aa75243ce4483aebf6f16a8c7aef0bde\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+	android:label
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:20:9-34
+	android:icon
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:21:9-43
+activity#com.example.chesslock.MainActivity
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:22:9-33:20
+	android:launchMode
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:25:13-43
+	android:hardwareAccelerated
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:28:13-47
+	android:exported
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:24:13-36
+	android:configChanges
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:27:13-83
+	android:theme
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:26:13-76
+	android:name
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:23:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:29:13-32:29
+action#android.intent.action.MAIN
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:30:17-68
+	android:name
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:30:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:31:17-76
+	android:name
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:31:27-74
+activity#com.example.chesslock.KeyguardDismissActivity
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:36:9-41:40
+	android:excludeFromRecents
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:39:13-46
+	android:noHistory
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:40:13-37
+	android:exported
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:41:13-37
+	android:theme
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:38:13-72
+	android:name
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:37:13-52
+receiver#com.example.chesslock.ChessLockAdminReceiver
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:44:9-54:20
+	android:exported
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:47:13-36
+	android:permission
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:46:13-70
+	android:name
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:45:13-51
+meta-data#android.app.device_admin
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:48:13-50:56
+	android:resource
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:50:17-53
+	android:name
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:49:17-56
+intent-filter#action:name:android.app.action.DEVICE_ADMIN_ENABLED
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:51:13-53:29
+action#android.app.action.DEVICE_ADMIN_ENABLED
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:52:17-82
+	android:name
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:52:25-79
+receiver#com.example.chesslock.BootReceiver
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:57:9-65:20
+	android:enabled
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:59:13-35
+	android:exported
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:60:13-36
+	android:name
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:58:13-41
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.QUICKBOOT_POWERON
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:61:13-64:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:62:17-79
+	android:name
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:62:25-76
+action#android.intent.action.QUICKBOOT_POWERON
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:63:17-82
+	android:name
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:63:25-79
+service#com.example.chesslock.LockscreenService
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:68:9-76:19
+	android:enabled
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:70:13-35
+	android:exported
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:71:13-37
+	android:foregroundServiceType
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:72:13-55
+	android:name
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:69:13-46
+property#android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:73:13-75:46
+	android:value
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:75:17-43
+	android:name
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:74:17-76
+service#com.example.chesslock.ChessLockAccessibilityService
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:79:9-89:19
+	android:exported
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:82:13-36
+	android:permission
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:81:13-79
+	android:name
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:80:13-58
+intent-filter#action:name:android.accessibilityservice.AccessibilityService
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:83:13-85:29
+action#android.accessibilityservice.AccessibilityService
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:84:17-92
+	android:name
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:84:25-89
+meta-data#android.accessibilityservice
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:86:13-88:72
+	android:resource
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:88:17-69
+	android:name
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\main\AndroidManifest.xml:87:17-60
+uses-permission#android.permission.INTERNET
+ADDED from D:\Final_project-2025\chesslock2\android\app\src\debug\AndroidManifest.xml:6:5-66
+	android:name
+		ADDED from D:\Final_project-2025\chesslock2\android\app\src\debug\AndroidManifest.xml:6:22-64
+uses-sdk
+INJECTED from D:\Final_project-2025\chesslock2\android\app\src\debug\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Final_project-2025\chesslock2\android\app\src\debug\AndroidManifest.xml
+INJECTED from D:\Final_project-2025\chesslock2\android\app\src\debug\AndroidManifest.xml
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\0ec59f0e132acab708b79aed52b364e9\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\0ec59f0e132acab708b79aed52b364e9\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\b0cde4615d67870957e8bae53c8a3630\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\b0cde4615d67870957e8bae53c8a3630\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\7a52f5c869223f4b7b270b9eff2ed5b3\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\7a52f5c869223f4b7b270b9eff2ed5b3\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.6.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\9e7f3e32b8eaa893f1b01c2fea4f52e8\transformed\jetified-activity-1.6.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.6.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\9e7f3e32b8eaa893f1b01c2fea4f52e8\transformed\jetified-activity-1.6.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\3f26aa378b920344f23e59ef6ef6ca44\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\3f26aa378b920344f23e59ef6ef6ca44\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\e7e52cafae30ef20dffec172ee8f862a\transformed\jetified-emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\e7e52cafae30ef20dffec172ee8f862a\transformed\jetified-emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\64b7d8e07455deaca36bcbe8176bc6ca\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\64b7d8e07455deaca36bcbe8176bc6ca\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\3e95be0d40ec2f3e34843c71e8a5f374\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\3e95be0d40ec2f3e34843c71e8a5f374\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\18812fe6734d1d3b1228ffe237b2d0ac\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\18812fe6734d1d3b1228ffe237b2d0ac\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\3a8529c4152351c1cd00626ae492faab\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\3a8529c4152351c1cd00626ae492faab\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\ffb9ca64d1bd1ffcbad4aad2b97f96fa\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\ffb9ca64d1bd1ffcbad4aad2b97f96fa\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\e38aca3d319d39ef8fd95963f0cba511\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\e38aca3d319d39ef8fd95963f0cba511\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.12.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\aa75243ce4483aebf6f16a8c7aef0bde\transformed\core-1.12.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.12.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\aa75243ce4483aebf6f16a8c7aef0bde\transformed\core-1.12.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\27147a66084d41e2a96857db33ee9515\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\27147a66084d41e2a96857db33ee9515\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\2e9ee44601e62d43a07eb2d7a47da36a\transformed\jetified-lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\2e9ee44601e62d43a07eb2d7a47da36a\transformed\jetified-lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.12.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\4d194d8484071216ff4d7bf0780e0391\transformed\jetified-core-ktx-1.12.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.12.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\4d194d8484071216ff4d7bf0780e0391\transformed\jetified-core-ktx-1.12.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\abd93623b9f933c591f7b7233c8e2413\transformed\jetified-savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\abd93623b9f933c591f7b7233c8e2413\transformed\jetified-savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\ed1e99123eb949d31e9b4b466410f52e\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\ed1e99123eb949d31e9b4b466410f52e\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\c712b46a8b25f4bceb30e7e1c60db1e7\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\c712b46a8b25f4bceb30e7e1c60db1e7\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\1cc5c5fd718d816809ec64119b238df9\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\1cc5c5fd718d816809ec64119b238df9\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\de8e4af5e9f4dbe0c9ef9cfd192007c1\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\de8e4af5e9f4dbe0c9ef9cfd192007c1\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\360275508d0127bd4487fd8420f0e09a\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\360275508d0127bd4487fd8420f0e09a\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\6ea63e1f038f29bb11b2f6f93970a239\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\6ea63e1f038f29bb11b2f6f93970a239\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\654c906ab278703e96af5649b5021711\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\654c906ab278703e96af5649b5021711\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\8dd0454869b368f4a0918e71372063f7\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\8dd0454869b368f4a0918e71372063f7\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\9fa55d716dc526465881724dac827c26\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\9fa55d716dc526465881724dac827c26\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\72a4023b07b9a3a107fcc5d8425d4411\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\72a4023b07b9a3a107fcc5d8425d4411\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\7f314a4e6f9628c793a20eae9c8bd0d3\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\7f314a4e6f9628c793a20eae9c8bd0d3\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+	android:targetSdkVersion
+		INJECTED from D:\Final_project-2025\chesslock2\android\app\src\debug\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Final_project-2025\chesslock2\android\app\src\debug\AndroidManifest.xml
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\64b7d8e07455deaca36bcbe8176bc6ca\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\1cc5c5fd718d816809ec64119b238df9\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\1cc5c5fd718d816809ec64119b238df9\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\654c906ab278703e96af5649b5021711\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\654c906ab278703e96af5649b5021711\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\64b7d8e07455deaca36bcbe8176bc6ca\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\64b7d8e07455deaca36bcbe8176bc6ca\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\64b7d8e07455deaca36bcbe8176bc6ca\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\64b7d8e07455deaca36bcbe8176bc6ca\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\64b7d8e07455deaca36bcbe8176bc6ca\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\64b7d8e07455deaca36bcbe8176bc6ca\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\64b7d8e07455deaca36bcbe8176bc6ca\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\aa75243ce4483aebf6f16a8c7aef0bde\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.12.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\aa75243ce4483aebf6f16a8c7aef0bde\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.12.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\aa75243ce4483aebf6f16a8c7aef0bde\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+permission#com.example.chesslock.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\aa75243ce4483aebf6f16a8c7aef0bde\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.12.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\aa75243ce4483aebf6f16a8c7aef0bde\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.12.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\aa75243ce4483aebf6f16a8c7aef0bde\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\aa75243ce4483aebf6f16a8c7aef0bde\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.12.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\aa75243ce4483aebf6f16a8c7aef0bde\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+uses-permission#com.example.chesslock.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\aa75243ce4483aebf6f16a8c7aef0bde\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.12.0] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\aa75243ce4483aebf6f16a8c7aef0bde\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\1cc5c5fd718d816809ec64119b238df9\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\1cc5c5fd718d816809ec64119b238df9\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Pavilion i5\.gradle\caches\8.13\transforms\1cc5c5fd718d816809ec64119b238df9\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78

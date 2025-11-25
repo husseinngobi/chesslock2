@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.9.1" type="conditional_incidents">
+
+    <incident
+        id="GestureBackNavigation"
+        severity="warning"
+        message="If intercepting back events, this should be handled through the registration of callbacks on the window level; Please see https://developer.android.com/about/versions/13/features/predictive-back-gesture">
+        <show-url
+            description="Show https://developer.android.com/about/versions/13/features/predictive-back-gesture"
+            url="https://developer.android.com/about/versions/13/features/predictive-back-gesture"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*2}/com/example/chesslock/ChessLockAccessibilityService.kt"
+            line="393"
+            column="17"
+            startOffset="16944"
+            endLine="393"
+            endColumn="51"
+            endOffset="16978"/>
+    </incident>
+
+    <incident
+        id="InlinedApi"
+        severity="warning"
+        message="">
+        <fix-data minSdk="24-∞" requiresApi="26-∞"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*2}/com/example/chesslock/ProfessionalChessLockscreen.kt"
+            line="834"
+            column="29"
+            startOffset="35106"
+            endLine="834"
+            endColumn="93"
+            endOffset="35170"/>
+        <map>
+            <entry
+                name="message"
+                string="Field requires API level 26 (current min is %1$s): `android.view.WindowManager.LayoutParams#TYPE_APPLICATION_OVERLAY`"/>
+            <api-levels id="minSdk"
+                value="24-∞"/>
+            <entry
+                name="name"
+                string="TYPE_APPLICATION_OVERLAY"/>
+            <entry
+                name="owner"
+                string="android.view.WindowManager.LayoutParams"/>
+            <api-levels id="requiresApi"
+                value="26-∞"/>
+        </map>
+    </incident>
+
+    <incident
+        id="UnspecifiedRegisterReceiverFlag"
+        severity="error"
+        message="`broadcastReceiver` is missing `RECEIVER_EXPORTED` or `RECEIVER_NOT_EXPORTED` flag for unprotected broadcasts registered for com.example.chesslock.ACTION_LOCK, com.example.chesslock.SHOW_LOCKSCREEN, com.example.chesslock.UNLOCK_DEVICE, com.example.chesslock.DISPLAY_OVERLAY">
+        <fix-data/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*2}/com/example/chesslock/ChessLockAccessibilityService.kt"
+            line="140"
+            column="17"
+            startOffset="6435"
+            endLine="140"
+            endColumn="60"
+            endOffset="6478"/>
+        <map>
+            <entry
+                name="hasUnprotected"
+                boolean="true"/>
+        </map>
+    </incident>
+
+    <incident
+        id="PermissionImpliesUnsupportedChromeOsHardware"
+        severity="error"
+        message="Permission exists without corresponding hardware `&lt;uses-feature android:name=&quot;android.hardware.telephony&quot; required=&quot;false&quot;>` tag">
+        <fix-data featureName="android.hardware.telephony"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
+            line="10"
+            column="6"
+            startOffset="601"
+            endLine="10"
+            endColumn="21"
+            endOffset="616"/>
+        <map>
+            <condition library="false"/>
+        </map>
+    </incident>
+
+</incidents>

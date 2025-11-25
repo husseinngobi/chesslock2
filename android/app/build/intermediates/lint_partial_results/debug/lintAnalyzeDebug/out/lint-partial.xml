@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.9.1" type="partial_results">
+    <map id="UnsafeImplicitIntentLaunch">
+            <map id="actionsRegisteredNonExported">
+                <entry
+                    name="com.example.chesslock.ACTION_LOCK (used to send a broadcast)"
+                    boolean="true"/>
+                <entry
+                    name="com.example.chesslock.DISPLAY_OVERLAY (used to send a broadcast)"
+                    boolean="true"/>
+                <entry
+                    name="com.example.chesslock.SHOW_LOCKSCREEN (used to send a broadcast)"
+                    boolean="true"/>
+                <entry
+                    name="com.example.chesslock.UNLOCK_DEVICE (used to send a broadcast)"
+                    boolean="true"/>
+            </map>
+            <map id="actionsSent">
+                    <map id="android.intent.action.MAIN (used to start an activity)">
+                        <location id="0"
+                            file="${:app*debug*MAIN*sourceProvider*0*javaDir*2}/com/example/chesslock/ChessLockAccessibilityService.kt"
+                            line="331"
+                            column="34"
+                            startOffset="14759"
+                            endLine="331"
+                            endColumn="60"
+                            endOffset="14785"/>
+                    </map>
+                    <map id="android.intent.action.VIEW (used to start an activity)">
+                        <location id="0"
+                            file="${:app*debug*MAIN*sourceProvider*0*javaDir*2}/com/example/chesslock/MainActivity.kt"
+                            line="527"
+                            column="34"
+                            startOffset="20634"
+                            endLine="527"
+                            endColumn="89"
+                            endOffset="20689"/>
+                    </map>
+                    <map id="android.settings.ACCESSIBILITY_SETTINGS (used to start an activity)">
+                        <location id="0"
+                            file="${:app*debug*MAIN*sourceProvider*0*javaDir*2}/com/example/chesslock/MainActivity.kt"
+                            line="58"
+                            column="31"
+                            startOffset="1824"
+                            endLine="58"
+                            endColumn="77"
+                            endOffset="1870"/>
+                    </map>
+                    <map id="android.settings.action.MANAGE_OVERLAY_PERMISSION (used to start an activity)">
+                        <location id="0"
+                            file="${:app*debug*MAIN*sourceProvider*0*javaDir*2}/com/example/chesslock/MainActivity.kt"
+                            line="74"
+                            column="31"
+                            startOffset="2492"
+                            endLine="74"
+                            endColumn="80"
+                            endOffset="2541"/>
+                    </map>
+            </map>
+    </map>
+    <map id="UnsafeIntentLaunch">
+            <map id="unprotected">
+                <entry
+                    name="android.content.BroadcastReceiver"
+                    boolean="true"/>
+                <entry
+                    name="com.example.chesslock.BootReceiver"
+                    boolean="true"/>
+                <entry
+                    name="com.example.chesslock.MainActivity"
+                    boolean="true"/>
+            </map>
+    </map>
+    <map id="UnusedResources">
+        <location id="R.drawable.launch_background"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/launch_background.xml"
+            line="3"
+            column="1"
+            startOffset="106"
+            endLine="12"
+            endColumn="14"
+            endOffset="444"/>
+        <location id="R.string.app_name"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="3"
+            column="13"
+            startOffset="65"
+            endLine="3"
+            endColumn="28"
+            endOffset="80"/>
+        <location id="R.style.LaunchTheme"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/styles.xml"
+            line="4"
+            column="12"
+            startOffset="183"
+            endLine="4"
+            endColumn="30"
+            endOffset="201"/>
+        <location id="R.style.NormalTheme"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/styles.xml"
+            line="15"
+            column="12"
+            startOffset="839"
+            endLine="15"
+            endColumn="30"
+            endOffset="857"/>
+        <entry
+            name="model"
+            string="attr[android_colorBackground(E)],color[ic_launcher_background(U)],drawable[launch_background(D),ic_launcher_foreground(U)],mipmap[ic_launcher(U)],string[app_name(D),accessibility_service_description(U)],style[LaunchTheme(D),NormalTheme(D)],xml[device_admin(U),accessibility_service_config(U)];4^1^3,7^2,8^0,a^6;;;"/>
+    </map>
+
+</incidents>
